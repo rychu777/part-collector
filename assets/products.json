@@ -1,0 +1,364 @@
+[
+  {
+    "category": "RAM",
+    "images": [
+      "https://as1.ftcdn.net/v2/jpg/03/52/65/22/1000_F_352652202_gle5fJmbH5GXns32aosr5j8WeBpVLBUs.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7xOadoqzzEL-fIYGYX0uMQ_YRGN8xbni6Q&s"
+    ],
+    "name": "G.Skill Trident Z5 Neo RGB DDR5-6000 (2 x 16GB)",
+    "price": "522.50 zł",
+    "specs": {
+      "Seria": "Trident Z Neo RGB",
+      "Standard": "DDR5",
+      "Pojemność": "32 GB (2x16 GB)",
+      "Taktowanie": "6000 MHz",
+      "Opóźnienia": "CL30",
+      "Profil XMP/EXPO": "AMD EXPO",
+      "Kolor": "Czarny"
+    },
+    "description": "Pamięci Trident Z5 Neo RGB DDR5, zaprojektowane dla najnowszych procesorów AMD Ryzen serii 7000, oferują niesamowitą wydajność i wyjątkowy design.",
+    "offers": [
+      {"store": "x-kom", "price": "549.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "522.50 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "category": "RAM",
+    "images": [
+      "https://www.intellitech.co.ke/media/blog_images/R.jpg",
+      "https://cdn.mos.cms.futurecdn.net/tNudfSZzcGucqDFMP7nXMS.jpg"
+    ],
+    "name": "Corsair Vengeance DDR5 32GB 5600MHz",
+    "price": "499.00 zł",
+    "specs": {
+      "Seria": "Vengeance",
+      "Standard": "DDR5",
+      "Pojemność": "32 GB (2x16 GB)",
+      "Taktowanie": "5600 MHz",
+      "Opóźnienia": "CL36",
+      "Kolor": "Czarny"
+    },
+    "description": "Corsair Vengeance DDR5, idealne do nowoczesnych systemów, oferujące wysoką wydajność przy atrakcyjnej cenie.",
+    "offers": [
+      {"store": "morele.net", "price": "499.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "category": "CPU",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtmRDleuUWRZDSzCCl_uOHqrIGOxgN_sulIg&s",
+      "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/4/pr_2022_4_4_13_1_27_284_00.jpg"
+    ],
+    "name": "AMD Ryzen 7 5800X",
+    "price": "1299.00 zł",
+    "specs": {
+      "Rdzenie": "8",
+      "Wątki": "16",
+      "Taktowanie": "3.8 GHz",
+      "Turbo": "4.7 GHz",
+      "Podstawka": "AM4"
+    },
+    "description": "AMD Ryzen 7 5800X – potężny procesor idealny do gier oraz profesjonalnych zastosowań.",
+    "offers": [
+      {"store": "x-kom", "price": "1299.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "CPU",
+    "images": [
+      "https://m.media-amazon.com/images/I/61DzCZUwryL.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKDmUnx3qLOQ_36Njd4NHPZrsvp304c31OA&s"
+    ],
+    "name": "Intel Core i5-12600K",
+    "price": "1349.00 zł",
+    "specs": {
+      "Rdzenie": "6+4",
+      "Wątki": "16",
+      "Taktowanie": "3.7 GHz",
+      "Turbo": "4.9 GHz",
+      "Podstawka": "LGA1700"
+    },
+    "description": "Intel Core i5-12600K – nowoczesny procesor o wysokiej wydajności, idealny do gier i pracy.",
+    "offers": [
+      {"store": "morele.net", "price": "1349.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "category": "GPU",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPDEI5-4RNNugHM2VlZ1fPjT5msFwCxuCqg&s",
+      "https://cdn.mos.cms.futurecdn.net/R6zbNW4EyUFXHdD4Laq8tb-1024-80.jpg"
+    ],
+    "name": "NVIDIA GeForce RTX 3080",
+    "price": "4599.00 zł",
+    "specs": {
+      "Pamięć": "10 GB GDDR6X",
+      "Taktowanie": "1440 MHz",
+      "Interfejs": "320-bit",
+      "Ray Tracing": "Tak"
+    },
+    "description": "NVIDIA GeForce RTX 3080 – karta graficzna, która umożliwia płynną rozgrywkę w najnowsze tytuły AAA z włączonym ray tracingiem.",
+    "offers": [
+      {"store": "mediamarkt", "price": "4599.00 zł", "url": "https://mediamarkt.pl/"}
+    ]
+  },
+  {
+    "category": "GPU",
+    "images": [
+      "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/MSI/Radeon-RX-6800-XT-GAMING-Z-TRIO-16G/4-gpu.jpg",
+      "https://www.mediaexpert.pl/media/cache/resolve/gallery/images/27/2738287/Karta-graficzna-MSI-Radeon-RX-6800-XT-Gaming-X-Trio-16GB-front.jpg"
+    ],
+    "name": "AMD Radeon RX 6800 XT",
+    "price": "3899.00 zł",
+    "specs": {
+      "Pamięć": "16 GB GDDR6",
+      "Taktowanie": "2015 MHz",
+      "Interfejs": "256-bit",
+      "Ray Tracing": "Tak"
+    },
+    "description": "AMD Radeon RX 6800 XT – potężna karta graficzna oferująca znakomitą wydajność zarówno w grach, jak i w aplikacjach profesjonalnych.",
+    "offers": [
+      {"store": "x-kom", "price": "3899.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "Disks",
+    "images": [
+      "https://images.morele.net/description/fb/fbf54ac8305b84ac210a9052d204f895.jpeg",
+      "https://image.ceneostatic.pl/data/products/76272538/25476894-f112-4818-be43-fe8b09666a01_i-samsung-970-evo-plus-500gb-m-2-mz-v7s500bw.jpg"
+    ],
+    "name": "Samsung 970 EVO Plus 1TB",
+    "price": "549.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "1 TB",
+      "Interfejs": "NVMe",
+      "Prędkość odczytu": "3500 MB/s",
+      "Prędkość zapisu": "3300 MB/s"
+    },
+    "description": "Samsung 970 EVO Plus – szybki dysk SSD NVMe, idealny do budowy wydajnych systemów.",
+    "offers": [
+      {"store": "morele.net", "price": "549.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "category": "Disks",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfw9wpV_x8a5tG2YxvLDZwK-Fq5Roe7fB0Kw&s",
+      "https://s3.eu-central-1.amazonaws.com/hotshops.pl/promo_thumb_jpeg/promo/dysk-crucial-mx500-1tb-ssd-ct1000mx500ssd1-kod-producenta-ct1000mx500ssd1-64e47caa8d6ca.jpg"
+    ],
+    "name": "Crucial MX500 1TB",
+    "price": "429.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "1 TB",
+      "Interfejs": "SATA",
+      "Prędkość odczytu": "560 MB/s",
+      "Prędkość zapisu": "510 MB/s"
+    },
+    "description": "Crucial MX500 – niezawodny dysk SSD SATA, który zapewnia dobre osiągi w codziennych zastosowaniach.",
+    "offers": [
+      {"store": "x-kom", "price": "429.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "Motherboard",
+    "images": [
+      "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/ASUS/ROG-STRIX-B550-F-GAMING/2-zlacza-m.2.jpg",
+      "https://dlcdnimgs.asus.com/websites/global/products/uri12btqafuvwte6/img/performance/show-5.png"
+    ],
+    "name": "ASUS ROG Strix B550-F Gaming",
+    "price": "799.00 zł",
+    "specs": {
+      "Chipset": "B550",
+      "Socket": "AM4",
+      "Form Factor": "ATX",
+      "Obsługa RAM": "DDR4"
+    },
+    "description": "ASUS ROG Strix B550-F – płyta główna o wysokiej wydajności, dedykowana graczom i entuzjastom.",
+    "offers": [
+      {"store": "mediamarkt", "price": "799.00 zł", "url": "https://mediamarkt.pl/"}
+    ]
+  },
+  {
+    "category": "RAM",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHnA9GvFNBLQpX4Bhq2XEySHBFZv2EY2KSVQ&s",
+      "https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/9/pr_2022_9_13_13_22_33_742_00.jpg"
+    ],
+    "name": "HyperX Fury DDR4 16GB 3200MHz",
+    "price": "239.00 zł",
+    "specs": {
+      "Seria": "Fury",
+      "Standard": "DDR4",
+      "Pojemność": "16 GB (2x8 GB)",
+      "Taktowanie": "3200 MHz",
+      "Opóźnienia": "CL16",
+      "Kolor": "Czerwony"
+    },
+    "description": "HyperX Fury DDR4 – pamięć o wysokiej wydajności, idealna do codziennych zastosowań i gier.",
+    "offers": [
+      {"store": "morele.net", "price": "239.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "239.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "CPU",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkjV22_N0ud98-Oc2g6D1LjJN-xpp_sBctog&s",
+      "https://image.ceneostatic.pl/data/products/123269482/i-intel-core-i7-12700-box-bx8071512700.jpg"
+    ],
+    "name": "Intel Core i7-12700K",
+    "price": "1899.00 zł",
+    "specs": {
+      "Rdzenie": "12 (8+4)",
+      "Wątki": "20",
+      "Taktowanie": "3.6 GHz",
+      "Turbo": "5.0 GHz",
+      "Podstawka": "LGA1700"
+    },
+    "description": "Intel Core i7-12700K – nowoczesny procesor z serii Alder Lake, oferujący znakomitą wydajność wielowątkową.",
+    "offers": [
+      {"store": "morele.net", "price": "1899.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "1899.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "GPU",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9PkM5yvDAL3GS1Q5_-tj-f4nGzRH1w08Elg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfMHuKWD_laa-XNYd6tjY3yfL4lB4oN-Ar6_eo3ZPqzgykkEyTYxysFxlzyVQcJVwYJQ&usqp=CAU"
+    ],
+    "name": "AMD Radeon RX 6700 XT",
+    "price": "2999.00 zł",
+    "specs": {
+      "Pamięć": "12 GB GDDR6",
+      "Taktowanie": "2321 MHz",
+      "Interfejs": "192-bit",
+      "Ray Tracing": "Tak"
+    },
+    "description": "AMD Radeon RX 6700 XT – karta graficzna zaprojektowana dla graczy, oferująca wysoką wydajność w rozdzielczości 1440p.",
+    "offers": [
+      {"store": "morele.net", "price": "2999.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "2999.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "Disks",
+    "images": [
+      "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/KINGSTON/NV1/a2-dysk-ssd-m2-kingston-nv1.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuoe_WWIGnlQqkdnG4VIBlz4Y5KY0fj3MIoA&s"
+    ],
+    "name": "Kingston NV1 NVMe 1TB",
+    "price": "399.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "1 TB",
+      "Interfejs": "NVMe",
+      "Prędkość odczytu": "2100 MB/s",
+      "Prędkość zapisu": "1700 MB/s"
+    },
+    "description": "Kingston NV1 – budżetowy dysk SSD NVMe, zapewniający przyzwoitą wydajność do codziennych zadań.",
+    "offers": [
+      {"store": "x-kom", "price": "399.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "399.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "category": "Motherboard",
+    "images": [
+      "https://www.gigabyte.com/FileUpload/Global/KeyFeature/1601/innergigabyteimages/click05.jpg",
+      "https://www.gigabyte.com/FileUpload/Global/KeyFeature/1601/innergigabyteimages/smart-fan5.jpg"
+    ],
+    "name": "Gigabyte AORUS B550 Elite",
+    "price": "749.00 zł",
+    "specs": {
+      "Chipset": "B550",
+      "Socket": "AM4",
+      "Form Factor": "ATX",
+      "Obsługa RAM": "DDR4"
+    },
+    "description": "Gigabyte AORUS B550 Elite – płyta główna z zaawansowanymi funkcjami dla graczy i entuzjastów.",
+    "offers": [
+      {"store": "morele.net", "price": "749.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "749.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "PSU",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvc7tXPfe2SqcI-DpcBaGekrIIAnXKqYm1kw&s",
+      "https://proline.pl/pic/0000000181_0.jpg"
+    ],
+    "name": "Seasonic Focus GX-850",
+    "price": "449.00 zł",
+    "specs": {
+      "Moc": "850W",
+      "Efektywność": "80+ Gold",
+      "Modularność": "Modularny"
+    },
+    "description": "Seasonic Focus GX-850 – zasilacz o wysokiej efektywności, zapewniający stabilne zasilanie dla wymagających systemów.",
+    "offers": [
+      {"store": "x-kom", "price": "449.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "449.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "category": "Cooling",
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSob16v9DnoxA4PgJ8vKqUCohTFWg1gmAlZIg&s",
+      "https://image.ceneostatic.pl/data/products/136712373/i-corsair-icue-h150i-rgb-elite-cw9060060ww.jpg"
+    ],
+    "name": "Corsair iCUE H150i Elite Capellix",
+    "price": "699.00 zł",
+    "specs": {
+      "Typ": "Chłodzenie wodne",
+      "Radiator": "360mm",
+      "Wentylatory": "3 x 120mm"
+    },
+    "description": "Corsair iCUE H150i Elite Capellix – wysokiej klasy chłodzenie wodne, idealne dla overclockingu i estetyki RGB.",
+    "offers": [
+      {"store": "mediamarkt", "price": "699.00 zł", "url": "https://mediamarkt.pl/"},
+      {"store": "x-kom", "price": "699.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "Case",
+    "images": [
+      "https://images.morele.net/description/b5/b5de8db5172f08d4d9d8239fc721a294.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejSy1FRMzccMMcIMRSoSu9mXhkKrmAQ0g7Q&s"
+    ],
+    "name": "NZXT H510",
+    "price": "399.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Obsługa": "ATX, Micro-ATX, Mini-ITX",
+      "Wentylatory": "2 x 120mm"
+    },
+    "description": "NZXT H510 – nowoczesna obudowa z minimalistycznym designem i doskonałym przepływem powietrza.",
+    "offers": [
+      {"store": "morele.net", "price": "399.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "399.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "category": "Disks",
+    "images": [
+      "https://m.media-amazon.com/images/I/713YsQS-9BL.jpg",
+      "https://gzhls.at/i/01/38/1700138-l0.jpg"
+    ],
+    "name": "Seagate Barracuda 2TB",
+    "price": "259.00 zł",
+    "specs": {
+      "Typ dysku": "HDD",
+      "Pojemność": "2 TB",
+      "Prędkość obrotowa": "7200 RPM",
+      "Interfejs": "SATA III"
+    },
+    "description": "Seagate Barracuda – klasyczny dysk twardy o dużej pojemności, idealny do przechowywania danych i multimediów.",
+    "offers": [
+      {"store": "morele.net", "price": "259.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "259.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  }
+]
