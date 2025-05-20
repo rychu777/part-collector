@@ -1,0 +1,127 @@
+[
+  {
+    "id": "39",
+    "category": "CPU",
+    "images": [
+      "https://example.com/intel-i5-12400f.jpg",
+      "https://example.com/intel-i5-12400f-2.jpg"
+    ],
+    "name": "Intel Core i5-12400F",
+    "price": "649.00 zł",
+    "specs": {
+      "Rdzenie": "6",
+      "Wątki": "12",
+      "Taktowanie": "2.5 GHz",
+      "Turbo": "4.4 GHz",
+      "Podstawka": "LGA1700",
+      "Grafika zintegrowana": "Brak"
+    },
+    "description": "Intel Core i5-12400F – 6-rdzeniowy procesor 12. generacji, idealny do gier w parze z dedykowaną kartą AMD.",
+    "offers": [
+      {"store": "x-kom", "price": "649.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "649.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "40",
+    "category": "GPU",
+    "images": [
+      "https://example.com/amd-rx-7600.jpg",
+      "https://example.com/amd-rx-7600-2.jpg"
+    ],
+    "name": "AMD Radeon RX 7600",
+    "price": "1 199.00 zł",
+    "specs": {
+      "Pamięć": "8 GB GDDR6",
+      "Taktowanie": "2 250 MHz",
+      "Interfejs": "128-bit",
+      "Ray Tracing": "Tak"
+    },
+    "description": "AMD RX 7600 – karta do gier w 1080p/1440p z technologią FSR 3.0, kompatybilna z Intel Core i5/i7.",
+    "offers": [
+      {"store": "x-kom", "price": "1199.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "41",
+    "category": "Motherboard",
+    "images": [
+      "https://example.com/msi-b760.jpg",
+      "https://example.com/msi-b760-2.jpg"
+    ],
+    "name": "MSI PRO B760M-A DDR4",
+    "price": "489.00 zł",
+    "specs": {
+      "Chipset": "B760",
+      "Socket": "LGA1700",
+      "Form Factor": "Micro-ATX",
+      "Obsługa RAM": "DDR4 3200+",
+      "Gniazda M.2": "2× NVMe"
+    },
+    "description": "MSI PRO B760M-A – płyta dla procesorów Intel 12./13. gen., obsługa DDR4 i dysków NVMe.",
+    "offers": [
+      {"store": "morele.net", "price": "489.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "42",
+    "category": "RAM",
+    "images": [
+      "https://example.com/kingston-ddr4.jpg",
+      "https://example.com/kingston-ddr4-2.jpg"
+    ],
+    "name": "Kingston FURY Beast DDR4 32GB 3200MHz (2x16GB)",
+    "price": "399.00 zł",
+    "specs": {
+      "Seria": "Fury Beast",
+      "Standard": "DDR4",
+      "Pojemność": "32 GB (2x16 GB)",
+      "Taktowanie": "3200 MHz",
+      "Opóźnienia": "CL16"
+    },
+    "description": "Pamięć DDR4 z XMP 2.0 dla Intel, kompatybilna z płytami B660/B760.",
+    "offers": [
+      {"store": "x-kom", "price": "399.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "43",
+    "category": "PSU",
+    "images": [
+      "https://example.com/be-quiet-psu.jpg",
+      "https://example.com/be-quiet-psu-2.jpg"
+    ],
+    "name": "be quiet! Pure Power 12 M 650W",
+    "price": "399.00 zł",
+    "specs": {
+      "Moc": "650 W",
+      "Efektywność": "80+ Bronze",
+      "Modularność": "Półmodularny",
+      "Złącza PCIe": "2 × 8-pin"
+    },
+    "description": "Zasilacz dla zestawów Intel + AMD GPU, cichy i stabilny nawet pod obciążeniem.",
+    "offers": [
+      {"store": "morele.net", "price": "399.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "44",
+    "category": "Case",
+    "images": [
+      "https://example.com/fractal-case.jpg",
+      "https://example.com/fractal-case-2.jpg"
+    ],
+    "name": "Fractal Design Focus 2",
+    "price": "299.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Obsługa": "ATX, Micro-ATX",
+      "Wentylatory": "2 × 120 mm (w zestawie)",
+      "Panel boczny": "Szkło hartowane"
+    },
+    "description": "Obudowa z dobrym przepływem powietrza, idealna dla układów Intel + AMD RX 7600.",
+    "offers": [
+      {"store": "x-kom", "price": "299.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  }
+]
