@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "category": "RAM",
     "images": [
       "https://as1.ftcdn.net/v2/jpg/03/52/65/22/1000_F_352652202_gle5fJmbH5GXns32aosr5j8WeBpVLBUs.jpg",
@@ -23,6 +24,7 @@
     ]
   },
   {
+    "id": "2",
     "category": "RAM",
     "images": [
       "https://www.intellitech.co.ke/media/blog_images/R.jpg",
@@ -44,6 +46,7 @@
     ]
   },
   {
+    "id": "3",
     "category": "CPU",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtmRDleuUWRZDSzCCl_uOHqrIGOxgN_sulIg&s",
@@ -64,6 +67,7 @@
     ]
   },
   {
+    "id": "4",
     "category": "CPU",
     "images": [
       "https://m.media-amazon.com/images/I/61DzCZUwryL.jpg",
@@ -84,6 +88,7 @@
     ]
   },
   {
+    "id": "5",
     "category": "GPU",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPDEI5-4RNNugHM2VlZ1fPjT5msFwCxuCqg&s",
@@ -103,6 +108,7 @@
     ]
   },
   {
+    "id": "6",
     "category": "GPU",
     "images": [
       "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/MSI/Radeon-RX-6800-XT-GAMING-Z-TRIO-16G/4-gpu.jpg",
@@ -122,6 +128,7 @@
     ]
   },
   {
+    "id": "7",
     "category": "Disks",
     "images": [
       "https://images.morele.net/description/fb/fbf54ac8305b84ac210a9052d204f895.jpeg",
@@ -142,6 +149,7 @@
     ]
   },
   {
+    "id": "8",
     "category": "Disks",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfw9wpV_x8a5tG2YxvLDZwK-Fq5Roe7fB0Kw&s",
@@ -162,6 +170,7 @@
     ]
   },
   {
+    "id": "9",
     "category": "Motherboard",
     "images": [
       "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/ASUS/ROG-STRIX-B550-F-GAMING/2-zlacza-m.2.jpg",
@@ -181,6 +190,7 @@
     ]
   },
   {
+    "id": "10",
     "category": "RAM",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHnA9GvFNBLQpX4Bhq2XEySHBFZv2EY2KSVQ&s",
@@ -203,6 +213,7 @@
     ]
   },
   {
+    "id": "11",
     "category": "CPU",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkjV22_N0ud98-Oc2g6D1LjJN-xpp_sBctog&s",
@@ -224,6 +235,7 @@
     ]
   },
   {
+    "id": "12",
     "category": "GPU",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9PkM5yvDAL3GS1Q5_-tj-f4nGzRH1w08Elg&s",
@@ -244,6 +256,7 @@
     ]
   },
   {
+    "id": "13",
     "category": "Disks",
     "images": [
       "https://allegro.stati.pl/AllegroIMG/PRODUCENCI/KINGSTON/NV1/a2-dysk-ssd-m2-kingston-nv1.jpg",
@@ -265,6 +278,7 @@
     ]
   },
   {
+    "id": "14",
     "category": "Motherboard",
     "images": [
       "https://www.gigabyte.com/FileUpload/Global/KeyFeature/1601/innergigabyteimages/click05.jpg",
@@ -285,6 +299,7 @@
     ]
   },
   {
+    "id": "15",
     "category": "PSU",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvc7tXPfe2SqcI-DpcBaGekrIIAnXKqYm1kw&s",
@@ -304,6 +319,7 @@
     ]
   },
   {
+    "id": "16",
     "category": "Cooling",
     "images": [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSob16v9DnoxA4PgJ8vKqUCohTFWg1gmAlZIg&s",
@@ -323,6 +339,7 @@
     ]
   },
   {
+    "id": "17",
     "category": "Case",
     "images": [
       "https://images.morele.net/description/b5/b5de8db5172f08d4d9d8239fc721a294.png",
@@ -342,6 +359,7 @@
     ]
   },
   {
+    "id": "18",
     "category": "Disks",
     "images": [
       "https://m.media-amazon.com/images/I/713YsQS-9BL.jpg",
@@ -360,5 +378,290 @@
       {"store": "morele.net", "price": "259.00 zł", "url": "https://morele.net/"},
       {"store": "x-kom", "price": "259.00 zł", "url": "https://x-kom.pl/"}
     ]
-  }
+  },
+  {
+    "id": "19",
+    "category": "CPU",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "Intel Core i3-12100",
+    "price": "649.00 zł",
+    "specs": {
+      "Rdzenie": "4",
+      "Wątki": "8",
+      "Taktowanie": "3.3 GHz",
+      "Turbo": "4.3 GHz",
+      "Podstawka": "LGA1700",
+      "Grafika zintegrowana": "Intel UHD Graphics 730"
+    },
+    "description": "Intel Core i3-12100 – niedrogi procesor 12. generacji z kartą UHD 730, wystarczający do biura, multimediów i lekkiego gamingu.",
+    "offers": [
+      {"store": "x-kom", "price": "649.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "649.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "20",
+    "category": "Motherboard",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "MSI PRO B660M-A DDR4",
+    "price": "389.00 zł",
+    "specs": {
+      "Chipset": "B660",
+      "Socket": "LGA1700",
+      "Form Factor": "Micro-ATX",
+      "Obsługa RAM": "DDR4 3200+",
+      "Gniazda M.2": "2× NVMe"
+    },
+    "description": "MSI PRO B660M-A DDR4 – solidna płyta pod 12. gen. Intel, obsługa DDR4 3200+, dwa sloty M.2, idealna do budżetowych zestawów.",
+    "offers": [
+      {"store": "x-kom", "price": "389.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "389.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "21",
+    "category": "RAM",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "Patriot Viper Steel DDR4 16GB 3200MHz (2×8GB)",
+    "price": "229.00 zł",
+    "specs": {
+      "Seria": "Viper Steel",
+      "Standard": "DDR4",
+      "Pojemność": "16 GB (2×8 GB)",
+      "Taktowanie": "3200 MHz",
+      "Opóźnienia": "CL16",
+      "Kolor": "Czarny"
+    },
+    "description": "Patriot Viper Steel DDR4 – zestaw 16 GB 3200 MHz o niskich opóźnieniach CL16, doskonały do systemów budżetowych.",
+    "offers": [
+      {"store": "morele.net", "price": "229.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "229.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "22",
+    "category": "Disks",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "Crucial P2 500GB NVMe",
+    "price": "229.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "500 GB",
+      "Interfejs": "NVMe PCIe 3.0",
+      "Prędkość odczytu": "2 300 MB/s",
+      "Prędkość zapisu": "1 100 MB/s"
+    },
+    "description": "Crucial P2 500 GB SSD NVMe – szybki dysk do systemu i programów, przyspiesza uruchamianie i ładowanie aplikacji.",
+    "offers": [
+      {"store": "morele.net", "price": "229.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "229.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "23",
+    "category": "PSU",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "SilentiumPC Vero L3 500W 80+ Bronze",
+    "price": "229.00 zł",
+    "specs": {
+      "Moc": "500 W",
+      "Efektywność": "80+ Bronze",
+      "Modularność": "Brak",
+      "Wentylator": "120 mm"
+    },
+    "description": "SilentiumPC Vero L3 500W – niezawodny zasilacz 80+ Bronze, idealny do budżetowych zestawów bez modułowych kabli.",
+    "offers": [
+      {"store": "x-kom", "price": "229.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "229.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "24",
+    "category": "Case",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "SilentiumPC Signum SG1 TG",
+    "price": "149.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Obsługa": "ATX, Micro-ATX, Mini-ITX",
+      "Panel boczny": "Szkło hartowane",
+      "Wentylatory": "1 × 120 mm w zestawie"
+    },
+    "description": "SilentiumPC Signum SG1 TG – stylowa obudowa z hartowanym szkłem i jednym fabrycznym wentylatorem, świetna do budżetowych zestawów.",
+    "offers": [
+      {"store": "morele.net", "price": "149.00 zł", "url": "https://morele.net/"},
+      {"store": "x-kom", "price": "149.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+    {
+      "id": "25",
+      "category": "CPU",
+      "images": [
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+      ],
+      "name": "AMD Ryzen 5 5600",
+      "price": "699.00 zł",
+      "specs": {
+        "Rdzenie": "6",
+        "Wątki": "12",
+        "Taktowanie": "3.5 GHz",
+        "Turbo": "4.4 GHz",
+        "Podstawka": "AM4",
+        "Grafika zintegrowana": "Brak"
+      },
+      "description": "AMD Ryzen 5 5600 – popularny sześciordzeniowy procesor o doskonałym stosunku wydajności do ceny, idealny do gier i zastosowań multimedialnych.",
+      "offers": [
+        {"store": "morele.net", "price": "699.00 zł", "url": "https://morele.net/"},
+        {"store": "x-kom",     "price": "699.00 zł", "url": "https://x-kom.pl/"}
+      ]
+    },
+    {
+      "id": "26",
+      "category": "Motherboard",
+      "images": [
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+      ],
+      "name": "MSI B450-A PRO MAX",
+      "price": "359.00 zł",
+      "specs": {
+        "Chipset": "B450",
+        "Socket": "AM4",
+        "Form Factor": "ATX",
+        "Obsługa RAM": "DDR4 3466+",
+        "Gniazda M.2": "1× NVMe"
+      },
+      "description": "MSI B450‑A PRO MAX – sprawdzona płyta główna pod Ryzeny 3‑5‑7, stabilna sekcja zasilania i jeden slot M.2 NVMe.",
+      "offers": [
+        {"store": "x-kom",     "price": "359.00 zł", "url": "https://x-kom.pl/"},
+        {"store": "morele.net", "price": "359.00 zł", "url": "https://morele.net/"}
+      ]
+    },
+    {
+      "id": "27",
+      "category": "RAM",
+      "images": [
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+      ],
+      "name": "Patriot Viper Steel DDR4 16GB 3200MHz (2×8GB)",
+      "price": "229.00 zł",
+      "specs": {
+        "Seria": "Viper Steel",
+        "Standard": "DDR4",
+        "Pojemność": "16 GB (2×8 GB)",
+        "Taktowanie": "3200 MHz",
+        "Opóźnienia": "CL16",
+        "Kolor": "Czarny"
+      },
+      "description": "Patriot Viper Steel DDR4 – zestaw 16 GB 3200 MHz o niskich opóźnieniach CL16, doskonały do systemów budżetowych.",
+      "offers": [
+        {"store": "morele.net", "price": "229.00 zł", "url": "https://morele.net/"},
+        {"store": "x-kom",     "price": "229.00 zł", "url": "https://x-kom.pl/"}
+      ]
+    },
+    {
+      "id": "28",
+      "category": "Disks",
+      "images": [
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+      ],
+      "name": "Crucial P2 500GB NVMe",
+      "price": "229.00 zł",
+      "specs": {
+        "Typ dysku": "SSD",
+        "Pojemność": "500 GB",
+        "Interfejs": "NVMe PCIe 3.0",
+        "Prędkość odczytu": "2300 MB/s",
+        "Prędkość zapisu": "1100 MB/s"
+      },
+      "description": "Crucial P2 500 GB – szybki dysk NVMe do systemu i aplikacji, znacznie przyspiesza uruchamianie.",
+      "offers": [
+        {"store": "morele.net", "price": "229.00 zł", "url": "https://morele.net/"},
+        {"store": "x-kom",     "price": "229.00 zł", "url": "https://x-kom.pl/"}
+      ]
+    },
+    {
+      "id": "29",
+      "category": "GPU",
+      "images": [
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+      ],
+      "name": "AMD Radeon RX 6600",
+      "price": "1 099.00 zł",
+      "specs": {
+        "Pamięć": "8 GB GDDR6",
+        "Taktowanie": "2044 MHz",
+        "Interfejs": "128-bit",
+        "Ray Tracing": "Tak"
+      },
+      "description": "AMD Radeon RX 6600 – karta do 1080p z dobrym stosunkiem wydajności do ceny, idealna w zestawach w budżecie ~3 000 zł.",
+      "offers": [
+        {"store": "x-kom",     "price": "1099.00 zł", "url": "https://x-kom.pl/"},
+        {"store": "morele.net", "price": "1099.00 zł", "url": "https://morele.net/"}
+      ]
+    },
+    {
+      "id": "30",
+      "category": "PSU",
+      "images": [
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+      ],
+      "name": "SilentiumPC Vero L3 500W 80+ Bronze",
+      "price": "229.00 zł",
+      "specs": {
+        "Moc": "500 W",
+        "Efektywność": "80+ Bronze",
+        "Modularność": "Brak",
+        "Wentylator": "120 mm"
+      },
+      "description": "SilentiumPC Vero L3 500 W – niezawodny zasilacz 80+ Bronze, idealny do zestawów mid-range.",
+      "offers": [
+        {"store": "x-kom",     "price": "229.00 zł", "url": "https://x-kom.pl/"},
+        {"store": "morele.net", "price": "229.00 zł", "url": "https://morele.net/"}
+      ]
+    },
+    {
+      "id": "31",
+      "category": "Case",
+      "images": [
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+        "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+      ],
+      "name": "SilentiumPC Signum SG1 TG",
+      "price": "149.00 zł",
+      "specs": {
+        "Typ": "Mid Tower",
+        "Obsługa": "ATX, Micro-ATX, Mini-ITX",
+        "Panel boczny": "Szkło hartowane",
+        "Wentylatory": "1 × 120 mm"
+      },
+      "description": "SilentiumPC Signum SG1 TG – stylowa obudowa z hartowanym szkłem, wyposażona w jeden fabryczny wentylator.",
+      "offers": [
+        {"store": "morele.net", "price": "149.00 zł", "url": "https://morele.net/"},
+        {"store": "x-kom",     "price": "149.00 zł", "url": "https://x-kom.pl/"}
+      ]
+    }
 ]

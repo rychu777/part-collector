@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   path_provider: ^2.1.5
+  uuid: ^3.0.6
   flutter:
     sdk: flutter
 
@@ -54,6 +55,8 @@ dev_dependencies:
 flutter:
   assets:
     - assets/products.json
+    - assets/default-builds/
+    - assets/custom-builds/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
