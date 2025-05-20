@@ -1,11 +1,15 @@
 import 'dart:convert';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'assistant_view.dart';
 import 'detail_view.dart';
 import 'part_view.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -43,13 +47,18 @@ class _HomeScreenState extends State<HomeScreen> {
     _productsFuture = _loadProducts();
   }
 
-  // tu wczytujemy pliki z jsona
-  Future<List<dynamic>> _loadProducts() async {
-    final jsonString = await rootBundle.loadString('assets/products.json');
-    final data = jsonDecode(jsonString) as List<dynamic>;
-    return data;
-  }
+// Tu wczytujemy pliki z bazy
+  Future<List<Map<String, dynamic>>> _loadProducts() async {
+    final querySnapshot = await FirebaseFirestore.instance
+        .collection('components.json')
+        .get();
 
+    final components = querySnapshot.docs
+        .map((doc) => doc.data())
+        .toList();
+
+    return components;
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
