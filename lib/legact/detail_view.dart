@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
-
-// Przykładowe kolory (możesz je dostosować do własnych potrzeb):
-const Color kPrimaryDark = Color(0xFF1D1B20);
-const Color kSurfaceLight = Color(0xFFE8DEF8);
-const Color kSurfaceLighter = Color(0xFFFEF7FF);
-const Color kWhite = Color(0xFFFFFFFF);
-const Color kDarkGrey = Color(0xFF1D1B20);
-const Color kPurple = Color(0xFF4F378A);
-const Color kPurple2 = Color(0xFF65558F);
-const Color kRedError = Color(0xFF9C3732);
-const Color kLightPurple = Color(0xFFD1C4E9);
-const Color kMainBackground = Color(0xFF333333);
+import 'constants.dart';
 
 class DetailView extends StatefulWidget {
   final Map<String, dynamic> productData;
@@ -26,7 +15,6 @@ class _DetailViewState extends State<DetailView> {
 
   @override
   Widget build(BuildContext context) {
-    // Pobieramy dane z przekazanego JSON-a:
     final images = widget.productData['images'] as List<dynamic>? ?? [];
     final name = widget.productData['name'] as String? ?? 'Brak nazwy';
     final price = widget.productData['price'] as String? ?? 'Brak ceny';
@@ -40,14 +28,11 @@ class _DetailViewState extends State<DetailView> {
         child: SafeArea(
           child: Column(
             children: [
-              // Sekcja karuzeli + przycisk powrotu
               _buildImageCarousel(images),
-              // Reszta treści (scrollowalna)
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      // Nazwa i cena
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: Column(
@@ -73,13 +58,10 @@ class _DetailViewState extends State<DetailView> {
                         ),
                       ),
                       const Divider(color: kWhite, thickness: 1),
-                      // Lista parametrów
                       _buildSpecsList(specs),
                       const Divider(color: kWhite, thickness: 1),
-                      // Opis
                       _buildDescription(description),
                       const Divider(color: kWhite, thickness: 1),
-                      // Oferty
                       _buildOffersSection(offers),
                       const SizedBox(height: 16),
                     ],
@@ -95,7 +77,6 @@ class _DetailViewState extends State<DetailView> {
     );
   }
 
-  // Karuzela zdjęć
   Widget _buildImageCarousel(List<dynamic> images) {
     if (images.isEmpty) {
       return Stack(
@@ -117,7 +98,6 @@ class _DetailViewState extends State<DetailView> {
 
     return Stack(
       children: [
-        // Możemy użyć PageView jako prostej karuzeli
         SizedBox(
           height: 200,
           child: PageView.builder(
@@ -136,7 +116,6 @@ class _DetailViewState extends State<DetailView> {
             },
           ),
         ),
-        // Strzałka wstecz
         _buildBackButton(),
         Positioned(
           bottom: 8,
@@ -161,7 +140,6 @@ class _DetailViewState extends State<DetailView> {
     );
   }
 
-  // Przycisk powrotu w lewym górnym rogu (transparentny)
   Widget _buildBackButton() {
     return Positioned(
       top: 8,
@@ -185,9 +163,7 @@ class _DetailViewState extends State<DetailView> {
     );
   }
 
-  // Lista parametrów
   Widget _buildSpecsList(Map<String, dynamic> specs) {
-    // specs to np. {"Pojemność": "32 GB", "Taktowanie": "6000 MHz", ...}
     if (specs.isEmpty) {
       return const Padding(
         padding: EdgeInsets.all(16.0),
@@ -234,7 +210,6 @@ class _DetailViewState extends State<DetailView> {
     );
   }
 
-  // Opis produktu
   Widget _buildDescription(String description) {
     return Padding(
       padding: const EdgeInsets.all(16.0),
@@ -245,7 +220,6 @@ class _DetailViewState extends State<DetailView> {
     );
   }
 
-  // Sekcja ofert
   Widget _buildOffersSection(List<dynamic> offers) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -298,8 +272,6 @@ class _DetailViewState extends State<DetailView> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        // Przekierowanie do URL w przeglądarce
-                        // (Docelowo można użyć url_launcher package)
                         debugPrint('Przekierowanie do: $storeUrl');
                       },
                       style: ElevatedButton.styleFrom(
@@ -320,7 +292,6 @@ class _DetailViewState extends State<DetailView> {
     );
   }
 
-  // Sto00opka
   Widget _buildBottomButtons() {
     return Container(
       color: kPrimaryDark,
