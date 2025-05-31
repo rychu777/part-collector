@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:first_app/legact/constants.dart';
 import 'package:first_app/viewmodels/DetailViewModel.dart';
 import 'package:first_app/models/DetailedProduct.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/models/component.dart';
 
 import 'package:first_app/widgets/StyledImageCarousel.dart';
 import 'package:first_app/widgets/StyledDetailsSection.dart';
 import 'package:first_app/widgets/StyledBottomBar.dart';
-
 
 class DetailViewMVVM extends StatelessWidget {
   final DetailedProduct product;
@@ -39,8 +39,22 @@ class DetailViewMVVM extends StatelessWidget {
                   StyledBottomBar(
                     onBackPressed: () => Navigator.pop(ctx),
                     onAddPressed: () {
-                      debugPrint('Dodano ${product.name} do koszyka/konfiguracji');
-                      Navigator.pop(ctx, product);
+                      final comp = Component(
+                        id: product.id,
+                        name: product.name,
+                        category: product.category.toUpperCase(),
+                        price: product.price,
+                        description: product.description,
+                        imageUrls: product.imageUrls,
+                        specs: product.specs,
+                        manufacturer: product.manufacturer,
+                        compatibilityTag: product.compatibilityTag,
+                      );
+
+                      debugPrint('Dodano ${product.name} do konfiguracji');
+
+                      Navigator.pop(context);
+                      Navigator.pop<Component>(context, comp);
                     },
                   ),
                 ],
