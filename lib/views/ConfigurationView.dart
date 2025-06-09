@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'package:first_app/viewmodels/ConfigurationViewModel.dart';
 import 'package:first_app/models/component.dart';
 import 'package:first_app/views/PartViewMVVM.dart';
@@ -52,7 +51,9 @@ class ConfigurationView extends StatelessWidget {
                     builder: (_) => PartViewMVVM(initialCategory: key),
                   ),
                 );
-                if (component != null) vm.selectSlot(key, component);
+                if (component != null) {
+                  vm.selectSlot(component.category, component);
+                }
               },
             ),
             bottomNavigationBar: ConfigurationBottomBar(

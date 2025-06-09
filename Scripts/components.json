@@ -663,5 +663,144 @@
         {"store": "morele.net", "price": "149.00 zł", "url": "https://morele.net/"},
         {"store": "x-kom",     "price": "149.00 zł", "url": "https://x-kom.pl/"}
       ]
-    }
+    },
+  {
+    "id": "301",
+    "category": "CPU",
+    "images": ["https://m.media-amazon.com/images/I/61C1DOLRK4L.jpg"],
+    "name": "Intel Core i7-14700KF",
+    "price": "1849.00 zł",
+    "specs": {
+      "Rdzenie/Wątki": "20 (8P + 12E) / 28",
+      "Taktowanie P-core": "3.4 GHz",
+      "Turbo P-core": "5.6 GHz",
+      "Podstawka": "LGA 1700",
+      "Odblokowany mnożnik": "Tak"
+    },
+    "description": "Potężny procesor i7 najnowszej generacji, oferujący topową wydajność w grach i zastosowaniach profesjonalnych.",
+    "offers": [
+      {"store": "x-kom", "price": "1849 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "302",
+    "category": "GPU",
+    "images": ["https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/graphic-cards/40-series/rtx-4070-4070ti/geforce-rtx-4070-super-og-1200x630.jpg"],
+    "name": "NVIDIA GeForce RTX 4070 Super 12GB",
+    "price": "3099.00 zł",
+    "specs": {
+      "Pamięć": "12GB GDDR6X",
+      "Rdzenie CUDA": "7168",
+      "Technologie": "DLSS 3, Ray Tracing",
+      "Pobór mocy": "220W"
+    },
+    "description": "Ogromny skok wydajności w porównaniu do niższych modeli. Idealna karta do płynnej gry w 1440p na najwyższych ustawieniach.",
+    "offers": [
+      {"store": "morele.net", "price": "3099 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "203",
+    "category": "Motherboard",
+    "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6KI4vcjHuSFbkYhGIleQ5jEJqJS4PL64Iug&s"],
+    "name": "Gigabyte B760 GAMING X DDR5",
+    "price": "649.00 zł",
+    "specs": {
+      "Socket": "LGA 1700",
+      "Chipset": "B760",
+      "RAM": "DDR5, 7600MHz (OC)",
+      "Format": "ATX",
+      "Sekcja zasilania": "8+1+1 faz"
+    },
+    "description": "Solidna płyta główna z chipsetem B760 i obsługą pamięci DDR5, która wciąż jest świetnym wyborem dla procesorów i7.",
+    "offers": [
+      {"store": "proline.pl", "price": "649 zł", "url": "https://proline.pl/"}
+    ]
+  },
+  {
+    "id": "204",
+    "category": "RAM",
+    "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8lcVf_jzxfuA5-crhiqk_vICJ5HudJISumQ&s"],
+    "name": "Kingston FURY Beast 32GB (2x16GB) 6000MHz CL32",
+    "price": "519.00 zł",
+    "specs": {
+      "Typ": "DDR5",
+      "Pojemność": "32 GB (2x16 GB)",
+      "Taktowanie": "6000 MHz",
+      "Opóźnienie": "CL32",
+      "Profil": "EXPO / XMP 3.0"
+    },
+    "description": "Szybka pamięć RAM DDR5, stanowiąca idealny balans między ceną a wydajnością dla nowoczesnych platform.",
+    "offers": [
+      {"store": "x-kom", "price": "519 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "305",
+    "category": "Cooling",
+    "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7M_ntbqT9TWi8kC4hv61wsn5elTES-DcfUQ&s"],
+    "name": "Endorfy Navis F360 ARGB",
+    "price": "549.00 zł",
+    "specs": {
+      "Typ": "Wodne (AIO)",
+      "Rozmiar chłodnicy": "360 mm",
+      "Wentylatory": "3x 120mm Fluctus ARGB",
+      "Kompatybilność": "LGA1700, AM5"
+    },
+    "description": "Wydajne chłodzenie wodne AIO, które zapewni niskie temperatury i cichą pracę dla gorącego procesora i7, nawet pod obciążeniem.",
+    "offers": [
+      {"store": "morele.net", "price": "549 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "206",
+    "category": "PSU",
+    "images": ["https://allegro.stati.pl/AllegroIMG/PRODUCENCI/BE%20QUIET/BN346/zasilacz-be-quiet-BN346-01.jpg"],
+    "name": "be quiet! Pure Power 12 M 750W",
+    "price": "469.00 zł",
+    "specs": {
+      "Moc": "750W",
+      "Certyfikat": "80+ Gold",
+      "Okablowanie": "W pełni modularne",
+      "Standard": "ATX 3.0"
+    },
+    "description": "750W to wciąż wystarczająca i bezpieczna moc dla tej konfiguracji. Niezawodny, cichy i w pełni modularny zasilacz z certyfikatem 80+ Gold.",
+    "offers": [
+      {"store": "x-kom", "price": "469 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "207",
+    "category": "Case",
+    "images": ["https://cdn.x-kom.pl/i/setup/images/prod/big/product-new-big,,2022/11/pr_2022_11_16_14_39_13_262_00.jpg"],
+    "name": "Endorfy Signum 300 ARGB",
+    "price": "369.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Obsługa": "ATX, Micro-ATX, Mini-ITX",
+      "Wentylatory w zestawie": "4x 120mm Stratus ARGB",
+      "Panel boczny": "Szkło hartowane"
+    },
+    "description": "Przewiewna i dobrze wyposażona obudowa z czterema wentylatorami ARGB w zestawie i nowoczesnym designem.",
+    "offers": [
+      {"store": "morele.net", "price": "369 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "308",
+    "category": "Disks",
+    "images": ["https://proline.pl/imgart/lexar-ssd-nm790-m-2-pcie-nvme-gen4-1.png"],
+    "name": "Lexar NM790 2TB NVMe PCIe 4.0",
+    "price": "549.00 zł",
+    "specs": {
+      "Pojemność": "2 TB",
+      "Interfejs": "M.2 PCIe Gen4 x4",
+      "Odczyt": "7400 MB/s",
+      "Zapis": "6500 MB/s"
+    },
+    "description": "Dwukrotnie większa pojemność przy zachowaniu ekstremalnej prędkości. Miejsce na system, wszystkie gry i programy.",
+    "offers": [
+      {"store": "x-kom", "price": "549 zł", "url": "https://x-kom.pl/"}
+    ]
+  }
 ]

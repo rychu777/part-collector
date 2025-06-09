@@ -75,6 +75,13 @@ class ConfigurationListView extends StatelessWidget {
                     try {
                       final decoded = jsonDecode(assistantJson);
                       if (decoded is List) {
+
+                        for (var item in decoded) {
+                          if (item is Map<String, dynamic> && item.containsKey('category')) {
+                            item['category'] = (item['category'] as String).toUpperCase();
+                          }
+                        }
+
                         final comps = decoded
                             .map<Component>((e) => Component.fromJson(e as Map<String, dynamic>))
                             .toList();
@@ -162,7 +169,7 @@ class ConfigurationListView extends StatelessWidget {
                         context: context,
                         builder: (ctx) => AlertDialog(
                           backgroundColor: kSurfaceLighter,
-                          title: const Text('Usuń zestaw?', style: TextStyle(color: kDarkGrey)),
+                          title: const Text('Usuń zestaw', style: TextStyle(color: kDarkGrey)),
                           content: Text('Czy na pewno usunąć "${b.name}"?',
                               style: const TextStyle(color: kDarkGrey)),
                           actions: [

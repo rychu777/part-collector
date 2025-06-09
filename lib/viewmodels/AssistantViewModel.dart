@@ -47,7 +47,7 @@ class AssistantViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  final List<int> budgetOptions = const [2000, 3000, 4000, 5000, 8000, 16000];
+  final List<int> budgetOptions = const [2000, 3000, 4000, 6000, 10000];
   final List<String> processorOptions = const ['AMD', 'Intel'];
   final List<String> graphicsCardOptions = const ['NVIDIA', 'AMD'];
   final List<String> coolingOptions = const ['Wodne', 'Klasyczne'];
