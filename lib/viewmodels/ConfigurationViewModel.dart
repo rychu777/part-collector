@@ -7,22 +7,22 @@ class ConfigurationViewModel extends ChangeNotifier {
     'CPU': 'Procesor',
     'GPU': 'Karta graficzna',
     'RAM': 'Pamięć RAM',
-    'Motherboard': 'Płyta główna',
-    'Cooling': 'Chłodzenie',
+    'MOTHERBOARD': 'Płyta główna',
+    'COOLING': 'Chłodzenie',
     'PSU': 'Zasilacz',
-    'Case': 'Obudowa',
-    'Disks': 'Dysk',
+    'CASE': 'Obudowa',
+    'DISKS': 'Dysk',
   };
 
   static const Map<String, String> slotImages = {
     'CPU': 'cpu.jpg',
     'GPU': 'gpu.jpg',
     'RAM': 'ram.jpg',
-    'Cooling': 'cooling.jpg',
+    'MOTHERBOARD': 'motherboard.jpg',
+    'COOLING': 'cooling.jpg',
     'PSU': 'psu.png',
-    'Case': 'case.jpg',
-    'Disks': 'disc.jpg',
-    'Motherboard': 'motherboard.jpg',
+    'CASE': 'case.jpg',
+    'DISKS': 'disc.jpg',
   };
 
   final String buildName;
@@ -55,7 +55,6 @@ class ConfigurationViewModel extends ChangeNotifier {
 
   void selectSlot(String key, Component component) {
     final newComponentWithCategory = component.copyWith(category: key);
-
     selected[key] = newComponentWithCategory;
 
     _checkCompatibility();
