@@ -1,5 +1,3 @@
-// File: lib/viewmodels/summary_view_model.dart
-
 import 'package:flutter/material.dart';
 import 'package:first_app/models/component.dart';
 import 'package:first_app/legacy/constants.dart';

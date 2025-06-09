@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:first_app/models/DetailedProduct.dart';
 import 'package:first_app/repositories/ProductRepository.dart';
 
-
 class ProductCatalogViewModel extends ChangeNotifier {
   final ProductRepository _repo;
   List<DetailedProduct> _products = [];

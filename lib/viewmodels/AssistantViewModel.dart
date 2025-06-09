@@ -1,7 +1,5 @@
 import 'package:flutter/foundation.dart';
-
 import '../repositories/PrebuildRepository.dart';
-
 
 class AssistantViewModel extends ChangeNotifier {
   int _currentStep = 0;

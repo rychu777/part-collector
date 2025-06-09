@@ -1,5 +1,3 @@
-// lib/models/BuildFile.dart
-
 import 'package:first_app/models/component.dart';
 
 class BuildFile {
