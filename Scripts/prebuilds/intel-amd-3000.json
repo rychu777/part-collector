@@ -1,0 +1,152 @@
+[
+  {
+    "id": "73",
+    "category": "CPU",
+    "images": [
+      "https://example.com/intel-i5-13600kf.jpg",
+      "https://example.com/intel-i5-13600kf-2.jpg"
+    ],
+    "name": "Intel Core i5-13600KF",
+    "price": "1 299.00 zł",
+    "specs": {
+      "Rdzenie": "14 (6P+8E)",
+      "Wątki": "20",
+      "Taktowanie": "3.5 GHz",
+      "Turbo": "5.1 GHz",
+      "Podstawka": "LGA1700",
+      "Grafika zintegrowana": "Brak"
+    },
+    "description": "Intel Core i5-13600KF – procesor 13. generacji z hybrydową architekturą, idealny do gier i aplikacji wielowątkowych.",
+    "offers": [
+      {"store": "x-kom", "price": "1299.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "1299.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "74",
+    "category": "GPU",
+    "images": [
+      "https://example.com/rx-6700-xt.jpg",
+      "https://example.com/rx-6700-xt-2.jpg"
+    ],
+    "name": "AMD Radeon RX 6700 XT 12GB",
+    "price": "1 599.00 zł",
+    "specs": {
+      "Pamięć": "12 GB GDDR6",
+      "Taktowanie": "2 581 MHz",
+      "Interfejs": "192-bit",
+      "Ray Tracing": "Tak",
+      "FSR": "2.2",
+      "Pobór mocy": "230 W"
+    },
+    "description": "RX 6700 XT – karta do gier w 1440p z 12GB pamięci, wspierająca FSR i ray tracing.",
+    "offers": [
+      {"store": "x-kom", "price": "1599.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "75",
+    "category": "Motherboard",
+    "images": [
+      "https://example.com/msi-b760.jpg",
+      "https://example.com/msi-b760-2.jpg"
+    ],
+    "name": "MSI PRO B760-P WIFI DDR4",
+    "price": "649.00 zł",
+    "specs": {
+      "Chipset": "B760",
+      "Socket": "LGA1700",
+      "Form Factor": "ATX",
+      "Obsługa RAM": "DDR4 5333+",
+      "Gniazda M.2": "2× NVMe",
+      "WiFi": "6"
+    },
+    "description": "Płyta główna z WiFi 6 i solidnym zasilaniem VRM dla i5-13600KF.",
+    "offers": [
+      {"store": "morele.net", "price": "649.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "76",
+    "category": "RAM",
+    "images": [
+      "https://example.com/gskill-ddr4.jpg",
+      "https://example.com/gskill-ddr4-2.jpg"
+    ],
+    "name": "G.Skill Ripjaws V DDR4 32GB 3600MHz (2x16GB)",
+    "price": "399.00 zł",
+    "specs": {
+      "Seria": "Ripjaws V",
+      "Standard": "DDR4",
+      "Pojemność": "32 GB (2x16 GB)",
+      "Taktowanie": "3600 MHz",
+      "Opóźnienia": "CL16",
+      "Profil XMP": "Tak"
+    },
+    "description": "Pamięć DDR4 z niskimi opóźnieniami, zoptymalizowana pod platformę Intel.",
+    "offers": [
+      {"store": "x-kom", "price": "399.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "77",
+    "category": "PSU",
+    "images": [
+      "https://example.com/seasonic-psu.jpg",
+      "https://example.com/seasonic-psu-2.jpg"
+    ],
+    "name": "Seasonic CORE GM-650 650W",
+    "price": "399.00 zł",
+    "specs": {
+      "Moc": "650 W",
+      "Efektywność": "80+ Gold",
+      "Modularność": "Półmodularny",
+      "Złącza PCIe": "2 × 8-pin"
+    },
+    "description": "Wysokiej jakości zasilacz z 7-letnią gwarancją, wystarczający dla RX 6700 XT.",
+    "offers": [
+      {"store": "morele.net", "price": "399.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "78",
+    "category": "Disks",
+    "images": [
+      "https://example.com/kingston-nv2.jpg",
+      "https://example.com/kingston-nv2-2.jpg"
+    ],
+    "name": "Kingston NV2 1TB NVMe",
+    "price": "299.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "1 TB",
+      "Interfejs": "NVMe PCIe 4.0",
+      "Prędkość odczytu": "3500 MB/s",
+      "Prędkość zapisu": "2100 MB/s"
+    },
+    "description": "Szybki dysk PCIe 4.0 do systemu i gier.",
+    "offers": [
+      {"store": "x-kom", "price": "299.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "79",
+    "category": "Cooling",
+    "images": [
+      "https://example.com/arctic-freezer.jpg",
+      "https://example.com/arctic-freezer-2.jpg"
+    ],
+    "name": "ARCTIC Freezer i35",
+    "price": "149.00 zł",
+    "specs": {
+      "Typ": "Air",
+      "Kompatybilność": "LGA1700",
+      "TDP": "200 W",
+      "Wentylator": "120 mm PWM"
+    },
+    "description": "Wydajne chłodzenie dla i5-13600KF w rozsądnej cenie.",
+    "offers": [
+      {"store": "morele.net", "price": "149.00 zł", "url": "https://morele.net/"}
+    ]
+  }
+]

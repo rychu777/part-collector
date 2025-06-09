@@ -1,0 +1,150 @@
+[
+  {
+    "id": "32",
+    "category": "CPU",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "AMD Ryzen 5 5600G",
+    "price": "699.00 zł",
+    "specs": {
+      "Rdzenie": "6",
+      "Wątki": "12",
+      "Taktowanie": "3.9 GHz",
+      "Turbo": "4.4 GHz",
+      "Podstawka": "AM4",
+      "Grafika zintegrowana": "Radeon Vega 7"
+    },
+    "description": "AMD Ryzen 5 5600G – procesor z wbudowaną grafiką Vega 7, idealny do budżetowych zestawów bez dedykowanej karty.",
+    "offers": [
+      {"store": "x-kom", "price": "699.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "699.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "33",
+    "category": "GPU",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "AMD Radeon RX 6500 XT",
+    "price": "849.00 zł",
+    "specs": {
+      "Pamięć": "4 GB GDDR6",
+      "Taktowanie": "2610 MHz",
+      "Interfejs": "64-bit",
+      "Ray Tracing": "Tak"
+    },
+    "description": "AMD Radeon RX 6500 XT – karta do gier w 1080p, wspierająca ray tracing w niskim budżecie.",
+    "offers": [
+      {"store": "x-kom", "price": "849.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "849.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "34",
+    "category": "Motherboard",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "Gigabyte A520M S2H",
+    "price": "299.00 zł",
+    "specs": {
+      "Chipset": "A520",
+      "Socket": "AM4",
+      "Form Factor": "Micro-ATX",
+      "Obsługa RAM": "DDR4 4733+",
+      "Gniazda M.2": "1× NVMe"
+    },
+    "description": "Gigabyte A520M S2H – podstawowa płyta dla Ryzenów, obsługuje PCIe 3.0 i dyski NVMe.",
+    "offers": [
+      {"store": "x-kom", "price": "299.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "35",
+    "category": "RAM",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "Kingston FURY Beast DDR4 16GB 3600MHz (2x8GB)",
+    "price": "259.00 zł",
+    "specs": {
+      "Seria": "Fury Beast",
+      "Standard": "DDR4",
+      "Pojemność": "16 GB (2x8 GB)",
+      "Taktowanie": "3600 MHz",
+      "Opóźnienia": "CL17",
+      "Profil XMP/EXPO": "AMD EXPO"
+    },
+    "description": "Kingston FURY Beast DDR4 z EXPO – pamięć zoptymalizowana pod Ryzeny 5000/7000.",
+    "offers": [
+      {"store": "morele.net", "price": "259.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "36",
+    "category": "Disks",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "WD Blue SN570 1TB NVMe",
+    "price": "349.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "1 TB",
+      "Interfejs": "NVMe PCIe 3.0",
+      "Prędkość odczytu": "3500 MB/s",
+      "Prędkość zapisu": "3000 MB/s"
+    },
+    "description": "WD Blue SN570 – szybki dysk NVMe z 5-letnią gwarancją, kompatybilny z płytami AM4.",
+    "offers": [
+      {"store": "x-kom", "price": "349.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "37",
+    "category": "PSU",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "be quiet! System Power 10 550W",
+    "price": "299.00 zł",
+    "specs": {
+      "Moc": "550 W",
+      "Efektywność": "80+ Bronze",
+      "Modularność": "Brak",
+      "Złącza PCIe": "1 × 8-pin"
+    },
+    "description": "Zasilacz dla zestawów z kartą RX 6500 XT/6600 – cichy i stabilny.",
+    "offers": [
+      {"store": "morele.net", "price": "299.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "38",
+    "category": "Case",
+    "images": [
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg",
+      "https://ditly.uk/wp-content/uploads/2017/06/System-Design.jpg"
+    ],
+    "name": "SilentiumPC Regnum RG4V EVO TG",
+    "price": "199.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Obsługa": "ATX, Micro-ATX",
+      "Wentylatory": "4 × 120 mm (w zestawie)",
+      "Panel boczny": "Szkło hartowane"
+    },
+    "description": "Obudowa z dobrym przepływem powietrza i czterema wentylatorami ARGB.",
+    "offers": [
+      {"store": "x-kom", "price": "199.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "102",
+    "category": "CPU",
+    "images": ["https://example.com/intel-i5-13600kf.jpg"],
+    "name": "Intel Core i5-13600KF",
+    "price": "1 299.00 zł",
+    "specs": {
+      "Rdzenie": "14 (6P+8E)",
+      "Wątki": "20",
+      "Taktowanie": "3.5 GHz",
+      "Turbo": "5.1 GHz",
+      "Cache": "24MB",
+      "Socket": "LGA1700"
+    },
+    "description": "14-rdzeniowa bestia do gier i multitaskingu, bez wbudowanej grafiki dla lepszej wydajności.",
+    "offers": [
+      {"store": "x-kom", "price": "1299 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "103",
+    "category": "GPU",
+    "images": ["https://example.com/rtx-4060-ti.jpg"],
+    "name": "NVIDIA RTX 4060 Ti 8GB",
+    "price": "1 899.00 zł",
+    "specs": {
+      "Pamięć": "8GB GDDR6",
+      "Clock": "2535 MHz",
+      "Złącza": "3x DP 1.4a, HDMI 2.1",
+      "Technologie": "DLSS 3, Ray Tracing"
+    },
+    "description": "Karta średniego segmentu z DLSS 3, idealna do 1440p gaming.",
+    "offers": [
+      {"store": "morele.net", "price": "1899 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "104",
+    "category": "Motherboard",
+    "images": ["https://example.com/msi-b760.jpg"],
+    "name": "MSI B760 GAMING PLUS",
+    "price": "649.00 zł",
+    "specs": {
+      "Socket": "LGA1700",
+      "Chipset": "B760",
+      "RAM": "DDR4 5333MHz",
+      "M.2": "2x PCIe 4.0"
+    },
+    "description": "Solidna płyta gamingowa z dobrym zasilaniem VRM.",
+    "offers": [
+      {"store": "x-kom", "price": "649 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "105",
+    "category": "RAM",
+    "images": ["https://example.com/gskill-ram.jpg"],
+    "name": "G.Skill Ripjaws V 32GB (2x16GB) 3600MHz CL16",
+    "price": "399.00 zł",
+    "specs": {
+      "Typ": "DDR4",
+      "Timing": "CL16-19-19-39",
+      "Napięcie": "1.35V"
+    },
+    "description": "Wydajna pamięć z niskimi opóźnieniami.",
+    "offers": [
+      {"store": "morele.net", "price": "399 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "106",
+    "category": "Disks",
+    "images": ["https://example.com/kingston-nv2.jpg"],
+    "name": "Kingston NV2 1TB NVMe",
+    "price": "299.00 zł",
+    "specs": {
+      "Interfejs": "PCIe 4.0",
+      "Odczyt": "3500 MB/s",
+      "Zapis": "2100 MB/s"
+    },
+    "description": "Szybki dysk systemowy z 5-letnią gwarancją.",
+    "offers": [
+      {"store": "x-kom", "price": "299 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "107",
+    "category": "Case",
+    "images": ["https://example.com/silentiumpc-regnum.jpg"],
+    "name": "SilentiumPC Regnum RG6V TG",
+    "price": "299.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Wentylatory": "3x 120mm",
+      "Maks. GPU": "380mm"
+    },
+    "description": "Obudowa z dobrą wentylacją i szklanym bokiem.",
+    "offers": [
+      {"store": "morele.net", "price": "299 zł", "url": "https://morele.net/"}
+    ]
+  }
+]
