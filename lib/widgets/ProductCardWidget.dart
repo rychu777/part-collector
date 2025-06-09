@@ -46,7 +46,7 @@ class ProductCardWidget extends StatelessWidget {
               children: [
                 Text(product.name, style: const TextStyle(color: kWhite, fontSize: 20, fontWeight: FontWeight.bold)),
                 const SizedBox(height: 4),
-                Text('Od \$${product.price.toStringAsFixed(2)} zł', style: const TextStyle(color: kLightPurple, fontSize: 16)),
+                Text('Od ${product.price.toStringAsFixed(2)} zł', style: const TextStyle(color: kLightPurple, fontSize: 16)),
                 const SizedBox(height: 12),
                 ...product.specs.entries.take(3).map((e) => Text('${e.key}: ${e.value}', style: const TextStyle(color: kWhite, fontSize: 14), overflow: TextOverflow.ellipsis)).toList(),
                 const SizedBox(height: 16),

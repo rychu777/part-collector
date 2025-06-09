@@ -28,7 +28,7 @@ class StyledProductHeader extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Od \$${price.toStringAsFixed(2)} zł', // Formatowanie ceny
+            'Od ${price.toStringAsFixed(2)} zł', // Formatowanie ceny
             style: const TextStyle(
               color: kLightPurple,
               fontSize: 16,
