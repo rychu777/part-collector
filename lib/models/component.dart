@@ -21,6 +21,30 @@ class Component {
     required this.compatibilityTag,
   });
 
+  Component copyWith({
+    String? id,
+    String? name,
+    String? category,
+    double? price,
+    String? description,
+    List<String>? imageUrls,
+    Map<String, String>? specs,
+    String? manufacturer,
+    String? compatibilityTag,
+  }) {
+    return Component(
+      id: id ?? this.id,
+      name: name ?? this.name,
+      category: category ?? this.category,
+      price: price ?? this.price,
+      description: description ?? this.description,
+      imageUrls: imageUrls ?? this.imageUrls,
+      specs: specs ?? this.specs,
+      manufacturer: manufacturer ?? this.manufacturer,
+      compatibilityTag: compatibilityTag ?? this.compatibilityTag,
+    );
+  }
+
   factory Component.fromJson(Map<String, dynamic> json) {
     String getString(String key) => json[key]?.toString() ?? '';
 
@@ -40,7 +64,6 @@ class Component {
       priceString = priceString.replaceAll(RegExp(r'[^\d,.]'), '').replaceAll(',', '.');
       parsedPrice = double.tryParse(priceString) ?? 0.0;
     } catch (e) {
-      print('Error parsing price for component ${json['id']}: $e. Original price string: ${json['price']}');
       parsedPrice = 0.0;
     }
 

@@ -44,8 +44,7 @@ class ConfigurationViewModel extends ChangeNotifier {
 
     if (initialComponents != null) {
       for (var component in initialComponents) {
-
-        if (slots.containsKey(component.category)) {
+        if (component.category.isNotEmpty && slots.containsKey(component.category)) {
           selected[component.category] = component;
         }
       }
@@ -55,7 +54,10 @@ class ConfigurationViewModel extends ChangeNotifier {
   }
 
   void selectSlot(String key, Component component) {
-    selected[key] = component;
+    final newComponentWithCategory = component.copyWith(category: key);
+
+    selected[key] = newComponentWithCategory;
+
     _checkCompatibility();
     notifyListeners();
   }
