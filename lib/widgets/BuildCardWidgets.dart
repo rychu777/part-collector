@@ -11,7 +11,7 @@ class NewBuildCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: kDarkGrey,
+      color: kMainBackground,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: const BorderSide(color: kPurple, width: 2),
@@ -27,7 +27,7 @@ class NewBuildCard extends StatelessWidget {
   }
 }
 
-class ExistingBuildCard extends StatelessWidget {
+class ExistingBuildCard extends StatefulWidget {
   final BuildFile buildFile;
   final VoidCallback onTap;
   final VoidCallback onLongPress;
@@ -40,55 +40,128 @@ class ExistingBuildCard extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  State<ExistingBuildCard> createState() => _ExistingBuildCardState();
+}
+
+class _ExistingBuildCardState extends State<ExistingBuildCard>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 600), // czas przytrzymania
+      vsync: this,
+    );
+
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        widget.onLongPress();
+        _controller.reset(); // reset by można znów przytrzymać
+      }
+    });
+  }
+
+  void _handleTapDown(TapDownDetails details) {
+    _controller.forward();
+  }
+
+  void _handleTapUp(TapUpDetails details) {
+    _controller.reverse();
+  }
+
+  void _handleTapCancel() {
+    _controller.reverse();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final thumb = buildFile.components.isNotEmpty &&
-        buildFile.components.first.imageUrls.isNotEmpty
-        ? buildFile.components.first.imageUrls.first
+    final thumb = widget.buildFile.components.isNotEmpty &&
+        widget.buildFile.components.first.imageUrls.isNotEmpty
+        ? widget.buildFile.components.first.imageUrls.first
         : null;
 
     return Card(
+      clipBehavior: Clip.antiAlias,
       color: kDarkGrey,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: const BorderSide(color: kPurple, width: 2),
       ),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(16),
-        onTap: onTap,
-        onLongPress: onLongPress,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+      child: GestureDetector(
+        onTap: widget.onTap,
+        onTapDown: _handleTapDown,
+        onTapUp: _handleTapUp,
+        onTapCancel: _handleTapCancel,
+        child: Stack(
           children: [
-            if (thumb != null)
-              ClipRRect(
-                borderRadius:
-                const BorderRadius.vertical(top: Radius.circular(16)),
-                child: Image.network(
-                  thumb,
-                  height: 80,
-                  width: double.infinity,
+            // Background image
+            Positioned.fill(
+              child: thumb != null
+                  ? Image.network(
+                thumb,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => Image.asset(
+                  'assets/img/placeholder.jpg',
                   fit: BoxFit.cover,
-                  errorBuilder: (_, __, ___) => const SizedBox.shrink(),
                 ),
+              )
+                  : Image.asset(
+                'assets/img/placeholder.jpg',
+                fit: BoxFit.cover,
               ),
-            Expanded(
+            ),
+
+            // 1. Stała ciemna poświata (zawsze obecna)
+            Positioned.fill(
+              child: Container(
+                color: Colors.black.withOpacity(0.55),
+              ),
+            ),
+
+            // 2. Narastająca rozjaśniająca warstwa podczas przytrzymania
+            Positioned.fill(
+              child: AnimatedBuilder(
+                animation: _controller,
+                builder: (context, child) {
+                  return Container(
+                    color: Colors.white.withOpacity(0.3 * _controller.value),
+                  );
+                },
+              ),
+            ),
+
+            // Tekst
+            Positioned.fill(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 0),
+                padding: const EdgeInsets.all(12),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      buildFile.name,
+                      widget.buildFile.name,
                       style: const TextStyle(
-                          color: kWhite, fontWeight: FontWeight.bold),
+                        color: kWhite,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    const SizedBox(height: 1),
                     Text(
-                      '${buildFile.components.length} elementów',
-                      style: const TextStyle(color: kWhite),
+                      '${widget.buildFile.components.length} elementów',
+                      style: const TextStyle(
+                        color: kWhite,
+                        fontSize: 14,
+                      ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),

@@ -219,58 +219,45 @@ class BottomButtonsBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          isFirstStep
-              ? ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF1D1B20),
-              side: const BorderSide(
-                  color: Color(0xFF9C3732),
-                  width: 2),
-              padding:
-              const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+          SizedBox(
+            width: 120,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF1D1B20),
+                side: const BorderSide(color: Color(0xFF9C3732), width: 2),
+                padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
+              ),
+              onPressed: isFirstStep ? () => Navigator.pop(context) : onBack,
+              child: Text(
+                isFirstStep ? 'Anuluj' : 'Powrót',
+                style: const TextStyle(color: Color(0xFF9C3732), fontSize: 16),
+              ),
             ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            child: const Text('Anuluj',
-                style:
-                TextStyle(color: Color(0xFF9C3732), fontSize: 16)),
-          )
-              : ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF1D1B20),
-              side: const BorderSide(
-                  color: Color(0xFF9C3732),
-                  width: 2),
-              padding:
-              const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            ),
-            onPressed: onBack,
-            child: const Text('Powrót',
-                style:
-                TextStyle(color: Color(0xFF9C3732), fontSize: 16)),
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF9C3732),
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-            ),
-            onPressed: () {
-              if (!isStepValid()) {
-                String errorMsg = '';
-                switch ((isLastStep ? 3 : null)) {
-                  default:
-                    break;
+          SizedBox(
+            width: 120,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF9C3732),
+                padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
+              ),
+              onPressed: () {
+                if (!isStepValid()) {
+                  String errorMsg = '';
+                  switch ((isLastStep ? 3 : null)) {
+                    default:
+                      break;
+                  }
                 }
-              }
-              onNext();
-            },
-            child: Text(
-              isLastStep ? 'Zakończ' : 'Dalej',
-              style: const TextStyle(
-                  color: Color(0xFFFFFFFF),
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold),
+                onNext();
+              },
+              child: Text(
+                isLastStep ? 'Zakończ' : 'Dalej',
+                style: const TextStyle(
+                    color: Color(0xFFFFFFFF),
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ],
