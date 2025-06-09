@@ -1,5 +1,3 @@
-// viewmodels/ConfigurationViewModel.dart
-
 import 'package:flutter/material.dart';
 import 'package:first_app/models/component.dart';
 import 'package:first_app/services/CompatibilityService.dart';
@@ -34,11 +32,26 @@ class ConfigurationViewModel extends ChangeNotifier {
 
   final CompatibilityService _compatibilityService = CompatibilityService();
 
-  ConfigurationViewModel({required this.buildName, this.onSaveConfiguration}) {
+  ConfigurationViewModel({
+    required this.buildName,
+    this.onSaveConfiguration,
+    List<Component>? initialComponents,
+  }) {
     for (var key in slots.keys) {
       selected[key] = null;
       isSlotIncompatible[key] = false;
     }
+
+    if (initialComponents != null) {
+      for (var component in initialComponents) {
+
+        if (slots.containsKey(component.category)) {
+          selected[component.category] = component;
+        }
+      }
+    }
+
+    _checkCompatibility();
   }
 
   void selectSlot(String key, Component component) {
@@ -49,7 +62,6 @@ class ConfigurationViewModel extends ChangeNotifier {
 
   void _checkCompatibility() {
     final compatibilityResults = _compatibilityService.checkAllCompatibility(selected);
-
     isSlotIncompatible.clear();
     isSlotIncompatible.addAll(compatibilityResults);
   }

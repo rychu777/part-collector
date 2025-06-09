@@ -148,6 +148,7 @@ class ConfigurationListView extends StatelessWidget {
                         MaterialPageRoute(
                           builder: (_) => ConfigurationView(
                             buildName: b.name,
+                            initialComponents: b.components,
                             onSaveConfiguration: (List<Component> selectedComponents) async {
                               await vm.updateBuild(i, selectedComponents);
                             },

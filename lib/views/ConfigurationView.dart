@@ -12,11 +12,13 @@ import 'package:first_app/widgets/ConfigurationSlotList.dart';
 class ConfigurationView extends StatelessWidget {
   final String buildName;
   final Future<void> Function(List<Component>)? onSaveConfiguration;
+  final List<Component>? initialComponents;
 
   const ConfigurationView({
     Key? key,
     required this.buildName,
     this.onSaveConfiguration,
+    this.initialComponents,
   }) : super(key: key);
 
   @override
@@ -25,6 +27,7 @@ class ConfigurationView extends StatelessWidget {
       create: (_) => ConfigurationViewModel(
         buildName: buildName,
         onSaveConfiguration: onSaveConfiguration,
+        initialComponents: initialComponents,
       ),
       child: Consumer<ConfigurationViewModel>(
         builder: (context, vm, _) {
