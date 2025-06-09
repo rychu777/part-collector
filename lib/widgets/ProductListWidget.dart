@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/models/DetailedProduct.dart';
 import 'package:first_app/widgets/ProductCardWidget.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class ProductListWidget extends StatelessWidget {
   final List<DetailedProduct> products;

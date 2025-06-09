@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 import 'package:first_app/models/Offer.dart';
 class StyledOffersSection extends StatelessWidget {
   final List<Offer> offers;

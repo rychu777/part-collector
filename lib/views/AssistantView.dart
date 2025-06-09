@@ -6,7 +6,7 @@ import 'package:first_app/widgets/Step2Widget.dart';
 import 'package:first_app/widgets/Step3Widget.dart';
 import 'package:first_app/widgets/Step4Widget.dart';
 import 'package:first_app/widgets/AssistantWidgets.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class AssistantView extends StatelessWidget {
   const AssistantView({Key? key}) : super(key: key);

@@ -8,7 +8,7 @@ import 'package:first_app/viewmodels/ConfigurationListViewModel.dart';
 import 'package:first_app/views/ConfigurationView.dart';
 import 'package:first_app/views/AssistantView.dart';
 import 'package:first_app/widgets/BuildCardWidgets.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class ConfigurationListView extends StatelessWidget {
   const ConfigurationListView({Key? key}) : super(key: key);

@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:first_app/viewmodels/SummaryViewModel.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class SummaryMetricCard extends StatelessWidget {
   final SummaryMetric metric;

@@ -1,10 +1,10 @@
 // lib/main.dart
 
+import 'package:first_app/repositories/ConfigurationRepository.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:first_app/repositories/ProductRepository.dart';
-import 'package:first_app/repositories/ConfigurationRepository.dart';
 import 'package:first_app/views/ConfigurationListView.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:first_app/models/component.dart';
@@ -14,11 +14,11 @@ class FirestoreConfigurationRepository implements ConfigurationRepository {
   @override
   Future<List<Component>> fetchComponents(String category) async {
     final snap = await FirebaseFirestore.instance
-        .collection('components.json')
+        .collection('components')
         .where('category', isEqualTo: category)
         .get();
     return snap.docs
-        .map((d) => Component.fromJson(d.data() as Map<String, dynamic>))
+        .map((d) => Component.fromJson(d.data()))
         .toList();
   }
 }

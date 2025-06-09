@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class StyledSpecsList extends StatelessWidget {
   final Map<String, dynamic> specs;

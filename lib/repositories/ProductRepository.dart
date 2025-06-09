@@ -8,7 +8,7 @@ abstract class ProductRepository {
 class FirestoreProductRepository implements ProductRepository {
   @override
   Future<List<DetailedProduct>> getProducts() async {
-    final snap = await FirebaseFirestore.instance.collection('components.json').get();
+    final snap = await FirebaseFirestore.instance.collection('components').get();
     return snap.docs.map((d) => DetailedProduct.fromJson(d.data())).toList();
   }
 }

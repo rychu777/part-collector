@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/viewmodels/AssistantViewModel.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 import 'package:first_app/widgets/AssistantWidgets.dart';
 
 class Step3Widget extends StatelessWidget {

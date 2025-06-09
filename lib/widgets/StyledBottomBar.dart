@@ -1,6 +1,6 @@
 // lib/views/widgets/styled_bottom_bar.dart
 import 'package:flutter/material.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class StyledBottomBar extends StatelessWidget {
   final VoidCallback onBackPressed;

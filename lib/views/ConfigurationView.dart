@@ -5,7 +5,7 @@ import 'package:first_app/viewmodels/ConfigurationViewModel.dart';
 import 'package:first_app/models/component.dart';
 import 'package:first_app/views/PartViewMVVM.dart';
 import 'package:first_app/views/SummaryViewMVVM.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 import 'package:first_app/widgets/ConfigurationBottomBar.dart';
 import 'package:first_app/widgets/ConfigurationSlotList.dart';
 

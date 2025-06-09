@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
+
+import '../repositories/PrebuildRepository.dart';
 
 
 class AssistantViewModel extends ChangeNotifier {
@@ -105,15 +106,16 @@ class AssistantViewModel extends ChangeNotifier {
 
     final budgetKey = _selectedBudget.toString();
 
-    final fileName = '$procKey-$gpuKey-$budgetKey.json';
-    final assetPath = 'assets/default-builds/$fileName';
+    final fileName = '$procKey-$gpuKey-$budgetKey';
+    final assetPath = 'assets/defaul2t-builds/$fileName';
 
     if (kDebugMode) {
       debugPrint('[AssistantViewModel] Próbuję załadować: $assetPath');
     }
 
     try {
-      final loaded = await rootBundle.loadString(assetPath);
+      final repository = FirebasePrebuildRepository();
+      final loaded = await repository.fetchPrebuildJsonByFileName(fileName);
       return loaded;
     } catch (e) {
       if (kDebugMode) {

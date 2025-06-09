@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/models/DetailedProduct.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 import 'package:first_app/views/DetailViewMVVM.dart'; // Importuj DetailViewMVVM
 
 class ProductCardWidget extends StatelessWidget {

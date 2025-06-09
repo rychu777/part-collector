@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/legact/constants.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class StyledProductHeader extends StatelessWidget {
   final String name;
