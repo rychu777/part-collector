@@ -1,16 +1,19 @@
+// viewmodels/ConfigurationViewModel.dart
+
 import 'package:flutter/material.dart';
 import 'package:first_app/models/component.dart';
+import 'package:first_app/services/CompatibilityService.dart';
 
 class ConfigurationViewModel extends ChangeNotifier {
   static const Map<String, String> slots = {
     'CPU': 'Procesor',
     'GPU': 'Karta graficzna',
     'RAM': 'Pamięć RAM',
+    'Motherboard': 'Płyta główna',
     'Cooling': 'Chłodzenie',
     'PSU': 'Zasilacz',
     'Case': 'Obudowa',
     'Disks': 'Dysk',
-    'Motherboard': 'Płyta główna',
   };
 
   static const Map<String, String> slotImages = {
@@ -29,6 +32,8 @@ class ConfigurationViewModel extends ChangeNotifier {
   final Map<String, Component?> selected = {};
   final Map<String, bool> isSlotIncompatible = {};
 
+  final CompatibilityService _compatibilityService = CompatibilityService();
+
   ConfigurationViewModel({required this.buildName, this.onSaveConfiguration}) {
     for (var key in slots.keys) {
       selected[key] = null;
@@ -43,13 +48,10 @@ class ConfigurationViewModel extends ChangeNotifier {
   }
 
   void _checkCompatibility() {
-    isSlotIncompatible.updateAll((_, __) => false);
-    final cpu = selected['CPU'];
-    final gpu = selected['GPU'];
-    if (cpu != null && gpu != null && cpu.compatibilityTag != gpu.compatibilityTag) {
-      isSlotIncompatible['CPU'] = true;
-      isSlotIncompatible['GPU'] = true;
-    }
+    final compatibilityResults = _compatibilityService.checkAllCompatibility(selected);
+
+    isSlotIncompatible.clear();
+    isSlotIncompatible.addAll(compatibilityResults);
   }
 
   Future<void> saveConfiguration(BuildContext context) async {
