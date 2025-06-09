@@ -1,0 +1,150 @@
+[
+  {
+    "id": "66",
+    "category": "CPU",
+    "images": [
+      "https://example.com/ryzen-5-5600.jpg",
+      "https://example.com/ryzen-5-5600-2.jpg"
+    ],
+    "name": "AMD Ryzen 5 5600",
+    "price": "699.00 zł",
+    "specs": {
+      "Rdzenie": "6",
+      "Wątki": "12",
+      "Taktowanie": "3.5 GHz",
+      "Turbo": "4.4 GHz",
+      "Podstawka": "AM4",
+      "Grafika zintegrowana": "Brak"
+    },
+    "description": "AMD Ryzen 5 5600 – 6-rdzeniowy procesor z architekturą Zen 3, idealny do gier w parze z kartą NVIDIA.",
+    "offers": [
+      {"store": "x-kom", "price": "699.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "699.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "67",
+    "category": "GPU",
+    "images": [
+      "https://example.com/rtx-3060.jpg",
+      "https://example.com/rtx-3060-2.jpg"
+    ],
+    "name": "NVIDIA GeForce RTX 3060 12GB",
+    "price": "1 199.00 zł",
+    "specs": {
+      "Pamięć": "12 GB GDDR6",
+      "Taktowanie": "1 777 MHz",
+      "Interfejs": "192-bit",
+      "Ray Tracing": "Tak",
+      "DLSS": "2.0",
+      "Pobór mocy": "170 W"
+    },
+    "description": "RTX 3060 – karta do gier 1080p z technologią DLSS i ray tracingiem.",
+    "offers": [
+      {"store": "x-kom", "price": "1199.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "68",
+    "category": "Motherboard",
+    "images": [
+      "https://example.com/msi-b550.jpg",
+      "https://example.com/msi-b550-2.jpg"
+    ],
+    "name": "MSI B550-A PRO",
+    "price": "429.00 zł",
+    "specs": {
+      "Chipset": "B550",
+      "Socket": "AM4",
+      "Form Factor": "ATX",
+      "Obsługa RAM": "DDR4 4400+",
+      "Gniazda M.2": "2× NVMe"
+    },
+    "description": "Płyta główna z dobrym VRM dla Ryzenów, obsługuje PCIe 4.0.",
+    "offers": [
+      {"store": "morele.net", "price": "429.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "69",
+    "category": "RAM",
+    "images": [
+      "https://example.com/kingston-ddr4.jpg",
+      "https://example.com/kingston-ddr4-2.jpg"
+    ],
+    "name": "Kingston FURY Beast DDR4 16GB 3200MHz (2x8GB)",
+    "price": "229.00 zł",
+    "specs": {
+      "Seria": "Fury Beast",
+      "Standard": "DDR4",
+      "Pojemność": "16 GB (2x8 GB)",
+      "Taktowanie": "3200 MHz",
+      "Opóźnienia": "CL16"
+    },
+    "description": "Pamięć DDR4 z XMP, kompatybilna z platformą AM4.",
+    "offers": [
+      {"store": "x-kom", "price": "229.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "70",
+    "category": "PSU",
+    "images": [
+      "https://example.com/be-quiet-psu.jpg",
+      "https://example.com/be-quiet-psu-2.jpg"
+    ],
+    "name": "be quiet! System Power 10 550W",
+    "price": "299.00 zł",
+    "specs": {
+      "Moc": "550 W",
+      "Efektywność": "80+ Bronze",
+      "Modularność": "Brak",
+      "Złącza PCIe": "1 × 8-pin"
+    },
+    "description": "Cichy zasilacz wystarczający dla RTX 3060 i Ryzena 5 5600.",
+    "offers": [
+      {"store": "morele.net", "price": "299.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "71",
+    "category": "Disks",
+    "images": [
+      "https://example.com/crucial-p2.jpg",
+      "https://example.com/crucial-p2-2.jpg"
+    ],
+    "name": "Crucial P2 500GB NVMe",
+    "price": "229.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "500 GB",
+      "Interfejs": "NVMe PCIe 3.0",
+      "Prędkość odczytu": "2300 MB/s",
+      "Prędkość zapisu": "1100 MB/s"
+    },
+    "description": "Podstawowy dysk NVMe do systemu i gier.",
+    "offers": [
+      {"store": "x-kom", "price": "229.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "72",
+    "category": "Case",
+    "images": [
+      "https://example.com/silentium-case.jpg",
+      "https://example.com/silentium-case-2.jpg"
+    ],
+    "name": "SilentiumPC Signum SG1 TG",
+    "price": "149.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Obsługa": "ATX, Micro-ATX",
+      "Panel boczny": "Szkło hartowane",
+      "Wentylatory": "1 × 120 mm"
+    },
+    "description": "Budżetowa obudowa z dobrym przepływem powietrza.",
+    "offers": [
+      {"store": "morele.net", "price": "149.00 zł", "url": "https://morele.net/"}
+    ]
+  }
+]

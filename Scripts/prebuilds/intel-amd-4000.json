@@ -1,0 +1,113 @@
+[
+  {
+    "id": "115",
+    "category": "CPU",
+    "images": ["https://example.com/intel-i5-13600kf.jpg"],
+    "name": "Intel Core i5-13600KF",
+    "price": "1 299.00 zł",
+    "specs": {
+      "Rdzenie": "14 (6P+8E)",
+      "Wątki": "20",
+      "Taktowanie": "3.5 GHz",
+      "Turbo": "5.1 GHz",
+      "Socket": "LGA1700"
+    },
+    "description": "14-rdzeniowy procesor z hybrydową architekturą, idealny do gier i multitaskingu.",
+    "offers": [
+      {"store": "x-kom", "price": "1299 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "116",
+    "category": "GPU",
+    "images": ["https://example.com/rx-7700-xt.jpg"],
+    "name": "AMD Radeon RX 7700 XT 12GB",
+    "price": "2 199.00 zł",
+    "specs": {
+      "Pamięć": "12GB GDDR6",
+      "Taktowanie": "2300 MHz",
+      "Technologie": "FSR 3, Ray Tracing"
+    },
+    "description": "Karta do gier 1440p/4K z 12GB VRAM i wsparciem FSR 3.",
+    "offers": [
+      {"store": "morele.net", "price": "2199 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "117",
+    "category": "Motherboard",
+    "images": ["https://example.com/msi-b760.jpg"],
+    "name": "MSI PRO B760-P DDR4",
+    "price": "649.00 zł",
+    "specs": {
+      "Socket": "LGA1700",
+      "Chipset": "B760",
+      "RAM": "DDR4 5333MHz",
+      "M.2": "2x PCIe 4.0"
+    },
+    "description": "Płyta z solidnym zasilaniem VRM dla i5-13600KF.",
+    "offers": [
+      {"store": "x-kom", "price": "649 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "118",
+    "category": "RAM",
+    "images": ["https://example.com/gskill-ram.jpg"],
+    "name": "G.Skill Ripjaws V 32GB DDR4 3600MHz CL16",
+    "price": "399.00 zł",
+    "specs": {
+      "Typ": "DDR4",
+      "Timing": "CL16-19-19-39"
+    },
+    "description": "32GB pamięci dla płynnego działania gier i aplikacji.",
+    "offers": [
+      {"store": "morele.net", "price": "399 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "119",
+    "category": "Disks",
+    "images": ["https://example.com/kingston-nv2.jpg"],
+    "name": "Kingston NV2 1TB NVMe",
+    "price": "299.00 zł",
+    "specs": {
+      "Interfejs": "PCIe 4.0",
+      "Odczyt": "3500 MB/s"
+    },
+    "description": "Szybki dysk SSD do systemu i gier.",
+    "offers": [
+      {"store": "x-kom", "price": "299 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "120",
+    "category": "PSU",
+    "images": ["https://example.com/seasonic-psu.jpg"],
+    "name": "Seasonic CORE GM-650 650W",
+    "price": "399.00 zł",
+    "specs": {
+      "Certyfikat": "80+ Gold",
+      "Moc": "650W"
+    },
+    "description": "Wydajny zasilacz z półmodularnymi kablami.",
+    "offers": [
+      {"store": "morele.net", "price": "399 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "121",
+    "category": "Case",
+    "images": ["https://example.com/silentiumpc-regnum.jpg"],
+    "name": "SilentiumPC Regnum RG6V EVO TG",
+    "price": "299.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Wentylatory": "3x 120mm ARGB"
+    },
+    "description": "Obudowa z dobrym przepływem powietrza i szkłem hartowanym.",
+    "offers": [
+      {"store": "x-kom", "price": "299 zł", "url": "https://x-kom.pl/"}
+    ]
+  }
+]

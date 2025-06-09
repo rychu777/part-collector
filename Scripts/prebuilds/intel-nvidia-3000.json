@@ -1,0 +1,153 @@
+[
+  {
+    "id": "59",
+    "category": "CPU",
+    "images": [
+      "https://example.com/intel-i5-13600kf.jpg",
+      "https://example.com/intel-i5-13600kf-2.jpg"
+    ],
+    "name": "Intel Core i5-13600KF",
+    "price": "1 299.00 zł",
+    "specs": {
+      "Rdzenie": "14 (6P+8E)",
+      "Wątki": "20",
+      "Taktowanie": "3.5 GHz",
+      "Turbo": "5.1 GHz",
+      "Podstawka": "LGA1700",
+      "Grafika zintegrowana": "Brak"
+    },
+    "description": "Intel Core i5-13600KF – procesor 13. generacji z hybrydową architekturą, idealny do gier i streamingu.",
+    "offers": [
+      {"store": "x-kom", "price": "1299.00 zł", "url": "https://x-kom.pl/"},
+      {"store": "morele.net", "price": "1299.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "60",
+    "category": "GPU",
+    "images": [
+      "https://example.com/rtx-4060-ti.jpg",
+      "https://example.com/rtx-4060-ti-2.jpg"
+    ],
+    "name": "NVIDIA GeForce RTX 4060 Ti 8GB",
+    "price": "1 899.00 zł",
+    "specs": {
+      "Pamięć": "8 GB GDDR6",
+      "Taktowanie": "2 310 MHz",
+      "Interfejs": "128-bit",
+      "Ray Tracing": "Tak",
+      "DLSS": "3.0",
+      "Pobór mocy": "160 W"
+    },
+    "description": "RTX 4060 Ti – karta z DLSS 3 i frame generation do płynnej rozgrywki w 1440p.",
+    "offers": [
+      {"store": "x-kom", "price": "1899.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "61",
+    "category": "Motherboard",
+    "images": [
+      "https://example.com/msi-b760.jpg",
+      "https://example.com/msi-b760-2.jpg"
+    ],
+    "name": "MSI MAG B760 TOMAHAWK WIFI DDR4",
+    "price": "799.00 zł",
+    "specs": {
+      "Chipset": "B760",
+      "Socket": "LGA1700",
+      "Form Factor": "ATX",
+      "Obsługa RAM": "DDR4 5333+",
+      "Gniazda M.2": "3× NVMe",
+      "WiFi": "6E"
+    },
+    "description": "Płyta z rozbudowanym VRM i chłodzeniem, gotowa na podkręcanie CPU.",
+    "offers": [
+      {"store": "morele.net", "price": "799.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "62",
+    "category": "RAM",
+    "images": [
+      "https://example.com/gskill-ddr4.jpg",
+      "https://example.com/gskill-ddr4-2.jpg"
+    ],
+    "name": "G.Skill Ripjaws V DDR4 32GB 3600MHz (2x16GB)",
+    "price": "399.00 zł",
+    "specs": {
+      "Seria": "Ripjaws V",
+      "Standard": "DDR4",
+      "Pojemność": "32 GB (2x16 GB)",
+      "Taktowanie": "3600 MHz",
+      "Opóźnienia": "CL16",
+      "Profil XMP": "Tak"
+    },
+    "description": "Pamięć DDR4 z niskimi opóźnieniami, zoptymalizowana pod Intel 13. gen.",
+    "offers": [
+      {"store": "x-kom", "price": "399.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "63",
+    "category": "PSU",
+    "images": [
+      "https://example.com/seasonic-psu.jpg",
+      "https://example.com/seasonic-psu-2.jpg"
+    ],
+    "name": "Seasonic FOCUS GX-750 750W",
+    "price": "549.00 zł",
+    "specs": {
+      "Moc": "750 W",
+      "Efektywność": "80+ Gold",
+      "Modularność": "Pełna",
+      "Złącza PCIe": "2 × 8-pin"
+    },
+    "description": "Zasilacz premium z 10-letnią gwarancją, cichy i stabilny.",
+    "offers": [
+      {"store": "morele.net", "price": "549.00 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "64",
+    "category": "Disks",
+    "images": [
+      "https://example.com/samsung-980.jpg",
+      "https://example.com/samsung-980-2.jpg"
+    ],
+    "name": "Samsung 980 1TB NVMe",
+    "price": "349.00 zł",
+    "specs": {
+      "Typ dysku": "SSD",
+      "Pojemność": "1 TB",
+      "Interfejs": "NVMe PCIe 3.0",
+      "Prędkość odczytu": "3500 MB/s",
+      "Prędkość zapisu": "3000 MB/s"
+    },
+    "description": "Szybki dysk systemowy z pamięcią TLC i 5-letnią gwarancją.",
+    "offers": [
+      {"store": "x-kom", "price": "349.00 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "65",
+    "category": "Cooling",
+    "images": [
+      "https://example.com/arctic-freezer.jpg",
+      "https://example.com/arctic-freezer-2.jpg"
+    ],
+    "name": "ARCTIC Freezer i35 A-RGB",
+    "price": "199.00 zł",
+    "specs": {
+      "Typ": "Air",
+      "Kompatybilność": "LGA1700",
+      "TDP": "200 W",
+      "Wentylator": "120 mm PWM",
+      "Świecenie": "ARGB"
+    },
+    "description": "Wydajne chłodzenie dla i5-13600KF z kontrolą RGB.",
+    "offers": [
+      {"store": "morele.net", "price": "199.00 zł", "url": "https://morele.net/"}
+    ]
+  }
+]

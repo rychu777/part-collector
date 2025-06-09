@@ -1,0 +1,114 @@
+[
+  {
+    "id": "108",
+    "category": "CPU",
+    "images": ["https://example.com/ryzen-5-5600.jpg"],
+    "name": "AMD Ryzen 5 5600",
+    "price": "699.00 zł",
+    "specs": {
+      "Rdzenie": "6",
+      "Wątki": "12",
+      "Taktowanie": "3.5 GHz",
+      "Turbo": "4.4 GHz",
+      "Socket": "AM4",
+      "Cache": "35MB"
+    },
+    "description": "6-rdzeniowy procesor Zen 3 z doskonałą wydajnością w grach.",
+    "offers": [
+      {"store": "x-kom", "price": "699 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "109",
+    "category": "GPU",
+    "images": ["https://example.com/rtx-3060-ti.jpg"],
+    "name": "NVIDIA RTX 3060 Ti 8GB",
+    "price": "1 499.00 zł",
+    "specs": {
+      "Pamięć": "8GB GDDR6",
+      "Clock": "1665 MHz",
+      "Technologie": "DLSS, Ray Tracing"
+    },
+    "description": "Karta średniego segmentu z doskonałą wydajnością w 1440p.",
+    "offers": [
+      {"store": "morele.net", "price": "1499 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "110",
+    "category": "Motherboard",
+    "images": ["https://example.com/msi-b550.jpg"],
+    "name": "MSI B550-A PRO",
+    "price": "499.00 zł",
+    "specs": {
+      "Socket": "AM4",
+      "Chipset": "B550",
+      "RAM": "DDR4 4400MHz+",
+      "M.2": "2x PCIe"
+    },
+    "description": "Solidna płyta główna z dobrym zasilaniem VRM.",
+    "offers": [
+      {"store": "x-kom", "price": "499 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "111",
+    "category": "RAM",
+    "images": ["https://example.com/gskill-ram.jpg"],
+    "name": "G.Skill Ripjaws V 16GB (2x8GB) 3600MHz CL16",
+    "price": "249.00 zł",
+    "specs": {
+      "Typ": "DDR4",
+      "Timing": "CL16-19-19-39"
+    },
+    "description": "Optymalna pamięć dla platformy AM4.",
+    "offers": [
+      {"store": "morele.net", "price": "249 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "112",
+    "category": "Disks",
+    "images": ["https://example.com/kingston-nv1.jpg"],
+    "name": "Kingston NV1 1TB NVMe",
+    "price": "249.00 zł",
+    "specs": {
+      "Interfejs": "PCIe 3.0",
+      "Odczyt": "2100 MB/s"
+    },
+    "description": "Podstawowy dysk SSD do systemu i gier.",
+    "offers": [
+      {"store": "x-kom", "price": "249 zł", "url": "https://x-kom.pl/"}
+    ]
+  },
+  {
+    "id": "113",
+    "category": "Case",
+    "images": ["https://example.com/silentiumpc-signum.jpg"],
+    "name": "SilentiumPC Signum SG1 TG",
+    "price": "199.00 zł",
+    "specs": {
+      "Typ": "Mid Tower",
+      "Wentylatory": "1x 120mm"
+    },
+    "description": "Budżetowa obudowa z szklanym bokiem.",
+    "offers": [
+      {"store": "morele.net", "price": "199 zł", "url": "https://morele.net/"}
+    ]
+  },
+  {
+    "id": "114",
+    "category": "PSU",
+    "images": ["https://example.com/be-quiet-psu.jpg"],
+    "name": "be quiet! System Power 10 550W",
+    "price": "299.00 zł",
+    "specs": {
+      "Certyfikat": "80+ Bronze",
+      "Moc": "550W"
+    },
+    "description": "Cichy i wydajny zasilacz dla tej konfiguracji.",
+    "offers": [
+      {"store": "x-kom", "price": "299 zł", "url": "https://x-kom.pl/"}
+    ]
+  }
+]
