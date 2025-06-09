@@ -18,19 +18,27 @@ class Step3Widget extends StatelessWidget {
           const StepSubText(text: 'Wybierz przybliżoną kwotę.'),
           const SizedBox(height: 32),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
             decoration: BoxDecoration(
               color: kSurfaceLight,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: vm.selectedBudget != null ? kRedError : Colors.transparent,
-                width: 3,
+                width: 2.5,
               ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 6,
+                  offset: const Offset(0, 3),
+                ),
+              ],
             ),
             child: DropdownButtonHideUnderline(
               child: DropdownButton<int>(
                 value: vm.selectedBudget,
                 isExpanded: true,
+                borderRadius: BorderRadius.circular(12),
                 hint: const Text(
                   'Wybierz budżet',
                   style: TextStyle(
@@ -40,7 +48,7 @@ class Step3Widget extends StatelessWidget {
                   ),
                 ),
                 icon: const Icon(
-                  Icons.arrow_drop_down_circle_outlined,
+                  Icons.keyboard_arrow_down_rounded,
                   color: kDarkGrey,
                   size: 28,
                 ),
@@ -53,7 +61,17 @@ class Step3Widget extends StatelessWidget {
                 items: vm.budgetOptions.map((int value) {
                   return DropdownMenuItem<int>(
                     value: value,
-                    child: Center(child: Text('$value zł')),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Text(
+                        '$value zł',
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
                   );
                 }).toList(),
                 onChanged: (int? newValue) {
