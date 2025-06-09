@@ -7,13 +7,13 @@ class CompatibilityService {
     };
 
     final cpu = selectedComponents['CPU'];
-    final motherboard = selectedComponents['Motherboard'];
+    final motherboard = selectedComponents['MOTHERBOARD'];
     final ram = selectedComponents['RAM'];
-    final disk = selectedComponents['Disks'];
+    final disk = selectedComponents['DISKS'];
     final gpu = selectedComponents['GPU'];
     final psu = selectedComponents['PSU'];
-    final caseComponent = selectedComponents['Case'];
-    final coolingComponent = selectedComponents['Cooling'];
+    final caseComponent = selectedComponents['CASE'];
+    final coolingComponent = selectedComponents['COOLING'];
 
 
     // CPU ↔ Motherboard socket check
@@ -22,7 +22,7 @@ class CompatibilityService {
       final motherboardSocket = motherboard.specs['Socket'] ?? '';
       if (cpuSocket != motherboardSocket) {
         incompatibilityFlags['CPU'] = true;
-        incompatibilityFlags['Motherboard'] = true;
+        incompatibilityFlags['MOTHERBOARD'] = true;
       }
     }
 
@@ -32,7 +32,7 @@ class CompatibilityService {
       final motherboardRamSupport = motherboard.specs['Obsługa RAM'] ?? '';
       if (!motherboardRamSupport.contains(ramStandard)) {
         incompatibilityFlags['RAM'] = true;
-        incompatibilityFlags['Motherboard'] = true;
+        incompatibilityFlags['MOTHERBOARD'] = true;
       }
     }
 
@@ -42,11 +42,11 @@ class CompatibilityService {
       final hasNVMeSlot = (motherboard.specs['Gniazda M.2'] ?? '').contains('NVMe');
       final hasSata = (diskInterface.contains('SATA') && (motherboard.specs['Socket'] != null));
       if (diskInterface.contains('NVMe') && !hasNVMeSlot) {
-        incompatibilityFlags['Disks'] = true;
-        incompatibilityFlags['Motherboard'] = true;
+        incompatibilityFlags['DISKS'] = true;
+        incompatibilityFlags['MOTHERBOARD'] = true;
       } else if (diskInterface.contains('SATA') && !hasSata) {
-        incompatibilityFlags['Disks'] = true;
-        incompatibilityFlags['Motherboard'] = true;
+        incompatibilityFlags['DISKS'] = true;
+        incompatibilityFlags['MOTHERBOARD'] = true;
       }
     }
 
