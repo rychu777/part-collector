@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first_app/legacy/constants.dart';
 
 class RectRadioButton<T> extends StatelessWidget {
   final String label;
@@ -25,16 +26,16 @@ class RectRadioButton<T> extends StatelessWidget {
         height: height ?? 70,
         padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
         decoration: BoxDecoration(
-          color: const Color(0xFFE8DEF8),
+          color: kSurfaceLight,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: selected ? const Color(0xFF9C3732) : Colors.grey.shade400,
+            color: selected ? kRedError : Colors.grey.shade400,
             width: selected ? 3 : 1.5,
           ),
           boxShadow: selected
               ? [
             BoxShadow(
-              color: const Color(0xFF9C3732).withOpacity(0.3),
+              color: kRedError.withOpacity(0.3),
               blurRadius: 5,
               spreadRadius: 1,
             )
@@ -46,7 +47,7 @@ class RectRadioButton<T> extends StatelessWidget {
             label,
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: const Color(0xFF1D1B20), // kDarkGrey
+              color: kDarkGrey,
               fontSize: 15,
               fontWeight: selected ? FontWeight.bold : FontWeight.w500,
             ),
@@ -75,12 +76,14 @@ class StepsProgressBar extends StatelessWidget {
       widgets.add(
         CircleAvatar(
           radius: 14,
-          backgroundColor:
-          isActive ? const Color(0xFF4F378A) : Colors.grey[700],
+          backgroundColor: isActive ? kPurple : Colors.grey[700],
           child: Text(
             (i + 1).toString(),
             style: const TextStyle(
-                color: Color(0xFFFFFFFF), fontSize: 12, fontWeight: FontWeight.bold),
+              color: kWhite,
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       );
@@ -91,9 +94,7 @@ class StepsProgressBar extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 4),
               height: 3,
               decoration: BoxDecoration(
-                color: (i < currentStep)
-                    ? const Color(0xFF4F378A)
-                    : Colors.grey[700],
+                color: (i < currentStep) ? kPurple : Colors.grey[700],
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -120,7 +121,10 @@ class StepHeadline extends StatelessWidget {
         text,
         textAlign: TextAlign.center,
         style: const TextStyle(
-            color: Color(0xFFFFFFFF), fontSize: 24, fontWeight: FontWeight.bold),
+          color: kWhite,
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }
@@ -138,7 +142,10 @@ class StepSubText extends StatelessWidget {
       child: Text(
         text,
         textAlign: TextAlign.center,
-        style: const TextStyle(color: Color(0xFFD1C4E9), fontSize: 16),
+        style: const TextStyle(
+          color: kLightPurple,
+          fontSize: 16,
+        ),
       ),
     );
   }
@@ -166,7 +173,7 @@ class HardwareChoiceRow extends StatelessWidget {
         Text(
           title,
           style: const TextStyle(
-            color: Color(0xFFD1C4E9),
+            color: kLightPurple,
             fontSize: 18,
             fontWeight: FontWeight.w500,
           ),
@@ -213,7 +220,7 @@ class BottomButtonsBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFF1D1B20),
+      color: kPrimaryDark,
       padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16)
           .copyWith(bottom: MediaQuery.of(context).padding.bottom + 12),
       child: Row(
@@ -223,14 +230,15 @@ class BottomButtonsBar extends StatelessWidget {
             width: 120,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF1D1B20),
-                side: const BorderSide(color: Color(0xFF9C3732), width: 2),
-                padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
+                backgroundColor: kPrimaryDark,
+                side: BorderSide(color: kRedError, width: 2),
+                padding:
+                const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
               ),
               onPressed: isFirstStep ? () => Navigator.pop(context) : onBack,
               child: Text(
                 isFirstStep ? 'Anuluj' : 'Powrót',
-                style: const TextStyle(color: Color(0xFF9C3732), fontSize: 16),
+                style: TextStyle(color: kRedError, fontSize: 16),
               ),
             ),
           ),
@@ -238,8 +246,9 @@ class BottomButtonsBar extends StatelessWidget {
             width: 120,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF9C3732),
-                padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
+                backgroundColor: kRedError,
+                padding:
+                const EdgeInsets.symmetric(horizontal: 0, vertical: 12),
               ),
               onPressed: () {
                 if (!isStepValid()) {
@@ -254,9 +263,10 @@ class BottomButtonsBar extends StatelessWidget {
               child: Text(
                 isLastStep ? 'Zakończ' : 'Dalej',
                 style: const TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold),
+                  color: kWhite,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
