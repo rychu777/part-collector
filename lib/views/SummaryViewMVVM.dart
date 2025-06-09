@@ -190,6 +190,7 @@ class SummaryViewMVVM extends StatelessWidget {
     await vm.saveConfiguration(onSaveConfiguration);
 
     Navigator.pop(context);
+    Navigator.pop(context);
 
     messenger.showSnackBar(
       SnackBar(content: Text('${vm.buildName} zapisano!')),

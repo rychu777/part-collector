@@ -24,65 +24,106 @@ class FilterDrawerWidget extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              const Padding(
-                padding: EdgeInsets.all(16),
-                child: Text(
-                  'Filtry',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: kDarkGrey,
-                  ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 24),
+                child: Row(
+                  children: const [
+                    Icon(Icons.filter_alt_outlined, color: kDarkGrey),
+                    SizedBox(width: 8),
+                    Text(
+                      'Filtry',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w600,
+                        color: kDarkGrey,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              const Divider(color: kDarkGrey, thickness: 1),
+              const Divider(color: kDarkGrey, height: 1),
               Expanded(
                 child: filterOptions.isEmpty
                     ? const Center(
                   child: Text(
                     'Brak filtrów dla tej kategorii',
-                    style: TextStyle(color: kDarkGrey),
+                    style: TextStyle(color: kDarkGrey, fontSize: 16),
                   ),
                 )
-                    : ListView(
-                  children: filterOptions.entries.map((e) {
-                    final key = e.key;
-                    final vals = e.value.toList()..sort();
+                    : ListView.builder(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  itemCount: filterOptions.length,
+                  itemBuilder: (context, index) {
+                    final entry = filterOptions.entries.elementAt(index);
+                    final key = entry.key;
+                    final vals = entry.value.toList()..sort();
+
                     return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(key, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: kDarkGrey)),
-                          const SizedBox(height: 8),
+                          Text(
+                            key,
+                            style: const TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                              color: kDarkGrey,
+                            ),
+                          ),
+                          const SizedBox(height: 6),
                           Column(
                             children: vals.map((v) {
-                              return CheckboxListTile(
-                                title: Text(v, style: const TextStyle(color: kDarkGrey)),
-                                value: selectedFilters[key]?.contains(v) ?? false,
-                                onChanged: (checked) => onToggleFilter(key, v, checked!),
-                                activeColor: kRedError,
-                                checkColor: kWhite,
+                              final isSelected = selectedFilters[key]?.contains(v) ?? false;
+                              return Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 2),
+                                child: CheckboxListTile(
+                                  contentPadding: EdgeInsets.zero,
+                                  dense: true,
+                                  controlAffinity: ListTileControlAffinity.leading,
+                                  title: Text(
+                                    v,
+                                    style: TextStyle(
+                                      color: isSelected ? kPurple : kDarkGrey,
+                                      fontWeight: isSelected ? FontWeight.w500 : FontWeight.w400,
+                                    ),
+                                  ),
+                                  value: isSelected,
+                                  activeColor: kPurple,
+                                  checkColor: kWhite,
+                                  onChanged: (checked) => onToggleFilter(key, v, checked ?? false),
+                                ),
                               );
                             }).toList(),
                           ),
-                          const Divider(color: kDarkGrey, thickness: 1),
+                          const SizedBox(height: 6),
+                          Divider(color: kDarkGrey.withOpacity(0.2)),
                         ],
                       ),
                     );
-                  }).toList(),
+                  },
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(16),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: kRedError,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-                    padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton.icon(
+                    onPressed: onApplyFilters,
+                    icon: const Icon(Icons.check, size: 20, color: kWhite),
+                    label: const Text(
+                      'Zastosuj',
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: kWhite),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: kPurple,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      elevation: 0,
+                    ),
                   ),
-                  onPressed: onApplyFilters,
-                  child: const Text('Zastosuj', style: TextStyle(color: kWhite, fontSize: 18)),
                 ),
               ),
             ],
