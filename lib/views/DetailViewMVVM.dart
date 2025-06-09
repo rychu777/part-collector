@@ -4,7 +4,6 @@ import 'package:first_app/legacy/constants.dart';
 import 'package:first_app/viewmodels/DetailViewModel.dart';
 import 'package:first_app/models/DetailedProduct.dart';
 import 'package:first_app/models/component.dart';
-
 import 'package:first_app/widgets/StyledImageCarousel.dart';
 import 'package:first_app/widgets/StyledDetailsSection.dart';
 import 'package:first_app/widgets/StyledBottomBar.dart';

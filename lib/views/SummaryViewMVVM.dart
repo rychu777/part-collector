@@ -1,5 +1,3 @@
-// File: lib/views/summary_view_mvvm.dart
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:first_app/viewmodels/SummaryViewModel.dart';

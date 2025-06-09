@@ -13,6 +13,17 @@ class PartViewMVVM extends StatelessWidget {
 
   const PartViewMVVM({Key? key, this.initialCategory}) : super(key: key);
 
+  static const Map<String, String> names = {
+    'CPU': 'procesor',
+    'GPU': 'kartę graficzną',
+    'RAM': 'pamięć RAM',
+    'COOLING': 'chłodzenie',
+    'PSU': 'zasilacz',
+    'CASE': 'obudowę',
+    'DISKS': 'dysk',
+    'MOTHERBOARD': 'płytę główną',
+  };
+
   @override
   Widget build(BuildContext context) {
     final catalog = Provider.of<ProductCatalogViewModel>(context, listen: false);
@@ -46,7 +57,8 @@ class PartViewMVVM extends StatelessWidget {
             backgroundColor: kMainBackground,
             appBar: AppBar(
               backgroundColor: kPrimaryDark,
-              title: Text('Wybierz podzespół: ${displayCat}', style: const TextStyle(color: kWhite)),
+              title: Text('Wybierz ${names[displayCat] ?? displayCat}',
+                style: const TextStyle(color: kWhite),),
               actions: [
                 Builder(
                   builder: (drawerCtx) => IconButton(
