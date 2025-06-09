@@ -169,7 +169,7 @@ class ConfigurationListView extends StatelessWidget {
                         context: context,
                         builder: (ctx) => AlertDialog(
                           backgroundColor: kSurfaceLighter,
-                          title: const Text('Usuń zestaw?', style: TextStyle(color: kDarkGrey)),
+                          title: const Text('Usuń zestaw', style: TextStyle(color: kDarkGrey)),
                           content: Text('Czy na pewno usunąć "${b.name}"?',
                               style: const TextStyle(color: kDarkGrey)),
                           actions: [

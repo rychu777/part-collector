@@ -60,7 +60,6 @@ flutter:
   assets:
     - assets/products.json
     - assets/default-builds/
-    - assets/generated-builds/
     - assets/img/
 
   # The following line ensures that the Material Icons font is
