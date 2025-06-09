@@ -105,10 +105,9 @@ class AssistantViewModel extends ChangeNotifier {
     final budgetKey = _selectedBudget.toString();
 
     final fileName = '$procKey-$gpuKey-$budgetKey';
-    final assetPath = 'assets/defaul2t-builds/$fileName';
 
     if (kDebugMode) {
-      debugPrint('[AssistantViewModel] Próbuję załadować: $assetPath');
+      debugPrint('[AssistantViewModel] Próbuję załadować: $fileName');
     }
 
     try {
@@ -120,7 +119,7 @@ class AssistantViewModel extends ChangeNotifier {
         debugPrint(
             '[AssistantViewModel] Błąd ładowania pliku konfiguracji: $e');
       }
-      throw Exception('Nie znaleziono pliku konfiguracji: $assetPath');
+      throw Exception('Nie znaleziono pliku konfiguracji: $fileName');
     }
   }
 }
