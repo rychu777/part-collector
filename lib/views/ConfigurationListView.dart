@@ -75,6 +75,13 @@ class ConfigurationListView extends StatelessWidget {
                     try {
                       final decoded = jsonDecode(assistantJson);
                       if (decoded is List) {
+
+                        for (var item in decoded) {
+                          if (item is Map<String, dynamic> && item.containsKey('category')) {
+                            item['category'] = (item['category'] as String).toUpperCase();
+                          }
+                        }
+
                         final comps = decoded
                             .map<Component>((e) => Component.fromJson(e as Map<String, dynamic>))
                             .toList();
