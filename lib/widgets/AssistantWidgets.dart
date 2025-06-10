@@ -220,7 +220,7 @@ class BottomButtonsBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: kPrimaryDark,
+      color: kMainBackground,
       padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16)
           .copyWith(bottom: MediaQuery.of(context).padding.bottom + 12),
       child: Row(
@@ -230,7 +230,7 @@ class BottomButtonsBar extends StatelessWidget {
             width: 120,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: kPrimaryDark,
+                backgroundColor: kMainBackground,
                 side: BorderSide(color: kRedError, width: 2),
                 padding:
                 const EdgeInsets.symmetric(horizontal: 0, vertical: 12),

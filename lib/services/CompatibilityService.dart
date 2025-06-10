@@ -59,7 +59,11 @@ class CompatibilityService {
       final gpuName = gpu.name.toLowerCase();
       int requiredWattage = 0;
 
-      if (gpuName.contains('3080'))
+      if (gpuName.contains('4080'))
+      {
+        requiredWattage = 800;
+      }
+      else if (gpuName.contains('3080'))
         {
           requiredWattage = 750;
         }
