@@ -20,16 +20,19 @@ class ConfigurationListView extends StatelessWidget {
         backgroundColor: kSurfaceLighter,
         title: const Text('Nazwa zestawu', style: TextStyle(color: kDarkGrey)),
         content: TextField(
+          key: const Key('build_name_textfield'),
           autofocus: true,
           decoration: const InputDecoration(hintText: 'Wpisz nazwę'),
           onChanged: (v) => input = v,
         ),
         actions: [
           TextButton(
+            key: const Key('cancel_button'),
             onPressed: () => Navigator.pop(ctx, null),
             child: const Text('Anuluj', style: TextStyle(color: kPurple)),
           ),
           TextButton(
+            key: const Key('ok_button'),
             onPressed: () => Navigator.pop(ctx, input.trim()),
             child: const Text('OK', style: TextStyle(color: kPurple)),
           ),
@@ -63,6 +66,7 @@ class ConfigurationListView extends StatelessWidget {
               centerTitle: true,
               actions: [
                 IconButton(
+                  key: const Key('assistant_button'),
                   icon: const Icon(Icons.support_agent, color: kWhite),
                   tooltip: 'Asystent konfiguracji',
                   onPressed: () async {
@@ -174,10 +178,12 @@ class ConfigurationListView extends StatelessWidget {
                               style: const TextStyle(color: kDarkGrey)),
                           actions: [
                             TextButton(
+                              key: const Key('delete_cancel'),
                               onPressed: () => Navigator.pop(ctx, false),
                               child: const Text('Anuluj', style: TextStyle(color: kPurple)),
                             ),
                             TextButton(
+                              key: const Key('delete_ok'),
                               onPressed: () => Navigator.pop(ctx, true),
                               child: const Text('Usuń', style: TextStyle(color: kRedError)),
                             ),

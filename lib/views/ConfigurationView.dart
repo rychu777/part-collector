@@ -37,6 +37,7 @@ class ConfigurationView extends StatelessWidget {
               title: Text(vm.buildName, style: const TextStyle(color: kWhite)),
               actions: [
                 IconButton(
+                  key: const Key('save_button'),
                   icon: const Icon(Icons.save, color: kWhite),
                   onPressed: () => vm.saveConfiguration(context),
                 ),

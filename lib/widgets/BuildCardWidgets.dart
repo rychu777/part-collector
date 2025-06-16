@@ -17,6 +17,7 @@ class NewBuildCard extends StatelessWidget {
         side: const BorderSide(color: kPurple, width: 2),
       ),
       child: InkWell(
+        key: const Key('add_build_button'),
         borderRadius: BorderRadius.circular(16),
         onTap: onCreate,
         child: const Center(
@@ -89,6 +90,7 @@ class _ExistingBuildCardState extends State<ExistingBuildCard>
         : null;
 
     return Card(
+      key: Key('build_card_${widget.buildFile.name}'),
       clipBehavior: Clip.antiAlias,
       color: kDarkGrey,
       shape: RoundedRectangleBorder(

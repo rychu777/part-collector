@@ -109,6 +109,7 @@ class FilterDrawerWidget extends StatelessWidget {
                 child: SizedBox(
                   width: double.infinity,
                   child: ElevatedButton.icon(
+                    key: const Key('apply_filter_button'),
                     onPressed: onApplyFilters,
                     icon: const Icon(Icons.check, size: 20, color: kWhite),
                     label: const Text(

@@ -62,6 +62,7 @@ class PartViewMVVM extends StatelessWidget {
               actions: [
                 Builder(
                   builder: (drawerCtx) => IconButton(
+                    key: const Key('filter_button'),
                     icon: const Icon(Icons.filter_list, color: kWhite),
                     onPressed: () => Scaffold.of(drawerCtx).openEndDrawer(),
                   ),
