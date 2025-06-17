@@ -30,13 +30,15 @@ class ConfigurationViewModel extends ChangeNotifier {
   final Map<String, Component?> selected = {};
   final Map<String, bool> isSlotIncompatible = {};
 
-  final CompatibilityService _compatibilityService = CompatibilityService();
+  final CompatibilityService _compatibilityService;
 
   ConfigurationViewModel({
     required this.buildName,
     this.onSaveConfiguration,
     List<Component>? initialComponents,
-  }) {
+    CompatibilityService? compatibilityService,
+
+  }) : _compatibilityService = compatibilityService ?? CompatibilityService() {
     for (var key in slots.keys) {
       selected[key] = null;
       isSlotIncompatible[key] = false;
@@ -44,7 +46,8 @@ class ConfigurationViewModel extends ChangeNotifier {
 
     if (initialComponents != null) {
       for (var component in initialComponents) {
-        if (component.category.isNotEmpty && slots.containsKey(component.category)) {
+        if (component.category.isNotEmpty &&
+            slots.containsKey(component.category)) {
           selected[component.category] = component;
         }
       }
@@ -62,14 +65,16 @@ class ConfigurationViewModel extends ChangeNotifier {
   }
 
   void _checkCompatibility() {
-    final compatibilityResults = _compatibilityService.checkAllCompatibility(selected);
+    final compatibilityResults =
+    _compatibilityService.checkAllCompatibility(selected);
     isSlotIncompatible.clear();
     isSlotIncompatible.addAll(compatibilityResults);
   }
 
   Future<void> saveConfiguration(BuildContext context) async {
     if (onSaveConfiguration != null) {
-      await onSaveConfiguration!(selected.values.whereType<Component>().toList());
+      await onSaveConfiguration!(
+          selected.values.whereType<Component>().toList());
     }
     Navigator.pop(context);
   }

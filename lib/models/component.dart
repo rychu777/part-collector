@@ -54,14 +54,17 @@ class Component {
     }
 
     Map<String, String> getMapOfStrings(String key) {
-      final Map<String, dynamic>? dynamicMap = json[key];
-      return dynamicMap?.map((k, v) => MapEntry(k, v?.toString() ?? '')) ?? {};
+      if (json[key] is Map) {
+        final Map<String, dynamic> dynamicMap = Map<String, dynamic>.from(json[key]);
+        return dynamicMap.map((key, value) => MapEntry(key, value?.toString() ?? ''));
+      }
+      return {};
     }
 
     double parsedPrice;
     try {
       String priceString = json['price']?.toString() ?? '';
-      priceString = priceString.replaceAll(RegExp(r'[^\d,.]'), '').replaceAll(',', '.');
+      priceString = priceString.replaceAll(',', '').replaceAll(RegExp(r'[^\d.]'), '');
       parsedPrice = double.tryParse(priceString) ?? 0.0;
     } catch (e) {
       parsedPrice = 0.0;
