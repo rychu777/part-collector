@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Component {
   final String id;
   final String name;
@@ -64,7 +66,19 @@ class Component {
     double parsedPrice;
     try {
       String priceString = json['price']?.toString() ?? '';
-      priceString = priceString.replaceAll(',', '').replaceAll(RegExp(r'[^\d.]'), '');
+
+      priceString = priceString.replaceAll(RegExp(r'[^\d,.]'), '');
+
+      final lastComma = priceString.lastIndexOf(',');
+      final lastDot = priceString.lastIndexOf('.');
+
+      if (lastComma > lastDot) {
+        priceString = priceString.replaceAll('.', '').replaceAll(',', '.');
+      }
+      else {
+        priceString = priceString.replaceAll(',', '');
+      }
+
       parsedPrice = double.tryParse(priceString) ?? 0.0;
     } catch (e) {
       parsedPrice = 0.0;
